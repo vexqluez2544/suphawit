@@ -1,0 +1,2487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DATA RECOVERY LAB // Portfolio</title>
+  <meta name="description" content="Data Support Specialist & Hard Drive Forensics / Recovery Portfolio" />
+
+  <!-- Google Fonts: Unbounded (Ultra-Bold Display) + JetBrains Mono (Readouts & Hex) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Unbounded:wght@600;800;900&display=swap" rel="stylesheet" />
+
+  <!-- ==========================================================================
+       1. EDITABLE CONFIGURATION BLOCK (START HERE!)
+       Change your name, tagline, colors, bio, skills, projects, and links below.
+       ========================================================================== -->
+  <script>
+    window.LAB_CONFIG = {
+      // Identity
+      name: "SUPHAWIT R.",
+      role: "DATA SUPPORT SPECIALIST // HDD & STORAGE SYSTEMS",
+      tagline: "RESCUING CRITICAL BYTES FROM THE BRINK OF MAGNETIC OBLIVION.",
+      location: "BANGKOK, TH [13.7563° N, 100.5018° E]",
+      timezone: "Asia/Bangkok",
+      serialNumber: "SN-DRL-8804-X9",
+      firmware: "FW: REV.4.09-CLEANROOM",
+
+      // Theme Colors (Choose Neon Green '#00FF66' or Warning Orange '#FF5500' as primary)
+      colors: {
+        bgDark: "#070809",
+        bgPanel: "#0E1013",
+        accentPrimary: "#00FF66",   // Phosphor Neon Green
+        accentWarning: "#FF5500",   // Cleanroom Warning Orange
+        offWhite: "#EAEAEA",        // Secondary Off-White
+        muted: "#6E7681"
+      },
+
+      // Section 3: About & Storage Capacity Skills
+      about: {
+        heading: "CLEANROOM PRECISION. SECTOR-LEVEL OBSESSION.",
+        bio: "I am a Data Support Specialist working directly with high-density hard drives, storage arrays, and low-level diagnostic telemetry. Whether isolating bad sectors, interpreting S.M.A.R.T. failure signatures, automating drive health pipelines, or guiding mission-critical recovery workflows, I bridge raw hardware physics with bulletproof human support.",
+        stats: [
+          { label: "SECTORS VERIFIED", value: "4.8B+" },
+          { label: "RECOVERY INTEGRITY", value: "99.94%" },
+          { label: "CLEANROOM CLASS", value: "ISO-5" },
+          { label: "RESPONSE LATENCY", value: "< 4.2ms" }
+        ],
+        skills: [
+          {
+            driveLetter: "VOL_01 // C:",
+            name: "HDD Diagnostics & S.M.A.R.T. Telemetry",
+            percent: 96,
+            status: "96% — ALMOST FULL [OPTIMAL]",
+            filesystem: "RAW_LBA_64",
+            detail: "Deep analysis of reallocated sectors, read error rates, spin-up anomalies, and firmware logs."
+          },
+          {
+            driveLetter: "VOL_02 // D:",
+            name: "Technical Support & Incident Triage",
+            percent: 95,
+            status: "95% — ALMOST FULL [HIGH PRIORITY]",
+            filesystem: "EXT4_JOURNAL",
+            detail: "Translating complex storage failures into calm, actionable recovery steps for enterprise & end users."
+          },
+          {
+            driveLetter: "VOL_03 // E:",
+            name: "Data Recovery & Partition Reconstruction",
+            percent: 91,
+            status: "91% — HEAVY ALLOCATION",
+            filesystem: "NTFS_MFT_MIRROR",
+            detail: "Bit-for-bit disk imaging, non-destructive bad-head bypassing, and corrupted file table repair."
+          },
+          {
+            driveLetter: "VOL_04 // F:",
+            name: "Automation Scripting (Python / Bash / SQL)",
+            percent: 84,
+            status: "84% — ACTIVE WRITE CACHE",
+            filesystem: "ZFS_RAIDZ2",
+            detail: "Building automated log parsers, RMA verification dashboards, and batch drive stress-testing tools."
+          },
+          {
+            driveLetter: "VOL_05 // G:",
+            name: "Storage Architecture (RAID / NAS / SAN)",
+            percent: 88,
+            status: "88% — PARITY VERIFIED",
+            filesystem: "BTRFS_SCRUB",
+            detail: "Multi-bay parity reconstruction, degraded array recovery, and enterprise cold-storage workflows."
+          }
+        ]
+      },
+
+      // Section 4: Works ("Recovered Files") — 3 to 6 Projects
+      projects: [
+        {
+          id: "FILE_001.RAW",
+          sector: "0x004F8A10",
+          integrity: "100% RECOVERED",
+          size: "42.8 MB",
+          title: "S.M.A.R.T. Sentinel Telemetry Engine",
+          oneLiner: "Automated drive health analyzer that predicts mechanical head degradation 72 hours before failure.",
+          description: "Designed and deployed an automated diagnostic suite for support engineers to parse raw hexadecimal S.M.A.R.T. attributes across thousands of drive logs. Flags subtle increases in Seek Error Rate (0x07) and Current Pending Sector Count (0xC5) with visual heatmaps.",
+          tags: ["Python", "S.M.A.R.T. Telemetry", "Predictive Triage", "Log Parsing"],
+          metrics: ["Reduced RMA triage time by 64%", "Zero false negatives across 12,000+ drive logs", "Exports clean customer-ready PDF health reports"],
+          link: "https://github.com",
+          linkText: "INSPECT REPOSITORY // GITHUB",
+          hexPreview: "4D 5A 90 00 03 00 00 00 04 00 00 00 FF FF 00 00 B8 00 00 00 00 00 00 00 40 00 00 00"
+        },
+        {
+          id: "FILE_002.IMG",
+          sector: "0x009C2B40",
+          integrity: "99.9% RECOVERED",
+          size: "128.4 GB",
+          title: "Bad-Sector Adaptive Cloning Workflow",
+          oneLiner: "Multi-pass non-destructive disk imaging protocol for drives suffering from weak read/write heads.",
+          description: "Created a standardized multi-stage cloning workflow that dynamically skips damaged LBA zones on first pass to secure 95%+ of healthy platters immediately, before performing reverse-seek micro-reads on degraded sectors.",
+          tags: ["Disk Imaging", "LBA Mapping", "Linux ddrescue", "SOP Architecture"],
+          metrics: ["Increased successful byte extraction by 38%", "Prevented platter scoring on degraded drives", "Adopted as standard lab triage procedure"],
+          link: "https://github.com",
+          linkText: "VIEW PROTOCOL SPEC",
+          hexPreview: "EB 52 90 4E 54 46 53 20 20 20 20 00 02 08 00 00 00 00 00 00 00 F8 00 00 3F 00 FF 00"
+        },
+        {
+          id: "FILE_003.BIN",
+          sector: "0x012E77C0",
+          integrity: "100% RECOVERED",
+          size: "18.2 MB",
+          title: "RAID-5 Parity Reconstruction Simulator",
+          oneLiner: "Interactive training & support tool for visualizing XOR parity recovery across multi-disk arrays.",
+          description: "Built an interactive utility that helps support specialists and clients understand striped parity reconstruction when a multi-bay NAS experiences simultaneous drive dropouts and stale superblocks.",
+          tags: ["RAID Forensics", "XOR Parity", "JavaScript", "Support Tooling"],
+          metrics: ["Cut escalations on NAS tickets by 45%", "Simulates 3-to-12 bay configurations in real time", "Includes byte-offset stripe calculator"],
+          link: "https://github.com",
+          linkText: "LAUNCH LIVE TOOL",
+          hexPreview: "52 41 49 44 5F 56 45 52 5F 30 35 00 A9 F1 2C 88 00 1F 44 90 7B CC 10 02 99 E0 41 11"
+        },
+        {
+          id: "FILE_004.DAT",
+          sector: "0x018A00F0",
+          integrity: "99.8% RECOVERED",
+          size: "6.4 MB",
+          title: "Acoustic & Vibration Fault Classifier",
+          oneLiner: "Spectral reference guide matching HDD click/spin acoustic patterns to exact mechanical failure modes.",
+          description: "Compiled a diagnostic reference matrix correlating spindle motor whine, actuator sweep clicking, and parked-head stiction signatures with rapid support triage actions—preventing users from powering on critically damaged drives.",
+          tags: ["Hardware Forensics", "Acoustic Triage", "Customer Escalation", "Knowledge Base"],
+          metrics: ["18 distinct mechanical fault profiles cataloged", "Used daily by Tier-1 & Tier-2 support desks", "Saved hundreds of drives from fatal power-cycling"],
+          link: "https://github.com",
+          linkText: "OPEN AUDIO MATRIX",
+          hexPreview: "52 49 46 46 24 80 04 00 57 41 56 45 66 6D 74 20 10 00 00 00 01 00 02 00 44 AC 00 00"
+        },
+        {
+          id: "FILE_005.SYS",
+          sector: "0x021F9900",
+          integrity: "100% RECOVERED",
+          size: "310.0 MB",
+          title: "Partition Table & MFT Healer CLI",
+          oneLiner: "Command-line assistant for locating backup GPT headers and orphaned NTFS Master File Table records.",
+          description: "A streamlined diagnostic wrapper that scans raw volume offsets for backup boot sectors and reconstructs corrupted partition boundaries after accidental formatting or power-loss write interrupts.",
+          tags: ["GPT / MBR", "File Systems", "Bash / Python", "Hex Recovery"],
+          metrics: ["Restores volume mountability in under 90 seconds", "Read-only forensic safety lock built in", "Supports NTFS, exFAT, and EXT4 signatures"],
+          link: "https://github.com",
+          linkText: "INSPECT SOURCE CODE",
+          hexPreview: "45 46 49 20 50 41 52 54 00 00 01 00 5C 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00"
+        },
+        {
+          id: "FILE_006.LOG",
+          sector: "0x02B411E0",
+          integrity: "100% RECOVERED",
+          size: "14.9 MB",
+          title: "Zero-Friction RMA & Diagnostic Portal",
+          oneLiner: "Self-service support workflow turning cryptic error codes into plain-human recovery steps.",
+          description: "Redesigned the customer diagnostic intake pipeline so distressed users facing data loss receive immediate safety warnings, warranty verification, and step-by-step backup isolation before shipping hardware.",
+          tags: ["Support UX", "Workflow Automation", "Data Integrity", "SLA Optimization"],
+          metrics: ["98.4% customer satisfaction (CSAT) score", "Cut average ticket resolution time by 51%", "Eliminated incomplete diagnostic submissions"],
+          link: "https://github.com",
+          linkText: "READ CASE STUDY",
+          hexPreview: "7B 22 73 74 61 74 75 73 22 3A 22 4F 4B 22 2C 22 63 72 63 33 32 22 3A 22 30 78 39 41"
+        }
+      ],
+
+      // Section 5: Marquee Ticker Items
+      marqueeItems: [
+        "DATA INTEGRITY",
+        "ZERO DATA LOSS",
+        "SECTOR-BY-SECTOR VERIFICATION",
+        "CLEANROOM PROTOCOL",
+        "S.M.A.R.T. TELEMETRY",
+        "MAGNETIC FLUX REVERSAL",
+        "ACTUATOR PRECISION",
+        "RAID PARITY RECONSTRUCTION",
+        "NON-DESTRUCTIVE IMAGING"
+      ],
+
+      // Section 6: Contact Links
+      contact: {
+        email: "mailto:your.email@example.com",
+        emailDisplay: "your.email@example.com",
+        linkedin: "https://linkedin.com/in/yourprofile",
+        github: "https://github.com/yourusername",
+        line: "https://line.me/ti/p/~yourlineid",
+        lineDisplay: "LINE ID: @yourlineid"
+      }
+    };
+  </script>
+
+  <style>
+    /* ==========================================================================
+       2. CSS VARIABLES & RESET
+       ========================================================================== */
+    :root {
+      --bg-dark: #070809;
+      --bg-panel: #0E1013;
+      --bg-elevated: #14171C;
+      --accent: #00FF66;
+      --accent-dim: rgba(0, 255, 102, 0.14);
+      --accent-glow: rgba(0, 255, 102, 0.45);
+      --warning: #FF5500;
+      --warning-dim: rgba(255, 85, 0, 0.15);
+      --off-white: #EAEAEA;
+      --muted: #76808C;
+      --border: rgba(234, 234, 234, 0.13);
+      --border-accent: rgba(0, 255, 102, 0.35);
+
+      --font-display: 'Unbounded', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --cursor-x: 50vw;
+      --cursor-y: 50vh;
+    }
+
+    /* Theme Color Inversion State (Triggered on Scroll / Toggle) */
+    body.theme-inverted {
+      --bg-dark: #EAEAEA;
+      --bg-panel: #DCDCDC;
+      --bg-elevated: #CFCFCF;
+      --off-white: #070809;
+      --muted: #40464E;
+      --border: rgba(7, 8, 9, 0.16);
+      --accent: #FF4400;
+      --accent-dim: rgba(255, 68, 0, 0.12);
+      --accent-glow: rgba(255, 68, 0, 0.35);
+      --border-accent: rgba(255, 68, 0, 0.45);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-dark);
+      color: var(--off-white);
+      font-family: var(--font-mono);
+      overflow-x: hidden;
+      selection-background-color: var(--accent);
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: #070809;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--off-white);
+      overflow-x: hidden;
+      transition: background-color 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                  color 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: none; /* Custom Read/Write Head Cursor active on desktop */
+    }
+
+    @media (hover: none), (pointer: coarse) {
+      body {
+        cursor: auto;
+      }
+    }
+
+    a, button {
+      cursor: none;
+      color: inherit;
+      text-decoration: none;
+      font-family: inherit;
+    }
+    @media (hover: none), (pointer: coarse) {
+      a, button {
+        cursor: pointer;
+      }
+    }
+
+    /* ==========================================================================
+       3. FILM GRAIN, SCANLINES & CHROMATIC ABERRATION GLITCH
+       ========================================================================== */
+    .crt-scanlines {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9990;
+      background: repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 2px,
+        rgba(0, 0, 0, 0.22) 3px,
+        rgba(0, 0, 0, 0.22) 4px
+      );
+      opacity: 0.55;
+      mix-blend-mode: multiply;
+    }
+
+    .film-grain {
+      position: fixed;
+      inset: -50%;
+      width: 200%;
+      height: 200%;
+      pointer-events: none;
+      z-index: 9991;
+      opacity: 0.045;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      animation: grainShift 0.5s steps(2) infinite;
+    }
+
+    @keyframes grainShift {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(-2%, 1%); }
+      50% { transform: translate(1%, -2%); }
+      75% { transform: translate(-1%, 2%); }
+      100% { transform: translate(0, 0); }
+    }
+
+    /* Chromatic Aberration Glitch on Hover */
+    .chromatic-glitch {
+      position: relative;
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    .chromatic-glitch:hover {
+      text-shadow: -3px 0 0 var(--warning), 3px 0 0 var(--accent);
+      animation: glitchJitter 0.28s steps(2) infinite;
+    }
+
+    @keyframes glitchJitter {
+      0% { transform: translate(0, 0) skewX(0deg); }
+      25% { transform: translate(-2px, 1px) skewX(-2deg); }
+      50% { transform: translate(2px, -1px) skewX(2deg); }
+      75% { transform: translate(-1px, -1px) skewX(0deg); }
+      100% { transform: translate(0, 0) skewX(0deg); }
+    }
+
+    /* Fullscreen Glitch Flash Transition */
+    .glitch-transition-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 10005;
+      pointer-events: none;
+      opacity: 0;
+      background:
+        repeating-linear-gradient(0deg, rgba(0,255,102,0.18) 0px, transparent 4px, rgba(255,85,0,0.18) 8px);
+      mix-blend-mode: hard-light;
+    }
+    .glitch-transition-overlay.active {
+      animation: bootGlitchFlash 0.65s steps(4) forwards;
+    }
+    @keyframes bootGlitchFlash {
+      0% { opacity: 1; transform: scale(1.04) skewX(8deg); filter: invert(1); }
+      30% { opacity: 0.9; transform: translate(-15px, 6px) skewX(-10deg); }
+      60% { opacity: 0.75; transform: translate(12px, -8px) scaleY(1.02); filter: hue-rotate(90deg); }
+      100% { opacity: 0; transform: none; }
+    }
+
+    /* ==========================================================================
+       4. CUSTOM CURSOR: HARD DRIVE READ/WRITE HEAD
+       ========================================================================== */
+    .rw-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 56px;
+      height: 56px;
+      margin-left: -28px;
+      margin-top: -28px;
+      pointer-events: none;
+      z-index: 10010;
+      transform: translate3d(var(--cursor-x), var(--cursor-y), 0);
+      will-change: transform;
+      transition: width 0.2s ease, height 0.2s ease;
+    }
+
+    @media (hover: none), (pointer: coarse) {
+      .rw-cursor {
+        display: none !important;
+      }
+    }
+
+    .rw-cursor-svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .rw-cursor.is-hovering .rw-cursor-svg {
+      transform: scale(1.35) rotate(45deg);
+    }
+
+    .rw-cursor.is-clicking .rw-cursor-svg {
+      transform: scale(0.85);
+    }
+
+    .rw-cursor-label {
+      position: absolute;
+      left: 48px;
+      top: 32px;
+      font-size: 9px;
+      line-height: 1.2;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: rgba(7, 8, 9, 0.88);
+      border: 1px solid var(--border-accent);
+      padding: 2px 5px;
+      white-space: nowrap;
+      border-radius: 2px;
+      font-family: var(--font-mono);
+    }
+
+    /* ==========================================================================
+       6. TOP HUD NAVIGATION & SOUND / COLOR TOGGLES
+       ========================================================================== */
+    .hud-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 900;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem clamp(1rem, 3vw, 2.5rem);
+      background: rgba(7, 8, 9, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      transition: background 0.4s ease, border-color 0.4s ease;
+    }
+
+    body.theme-inverted .hud-header {
+      background: rgba(234, 234, 234, 0.85);
+    }
+
+    .hud-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 700;
+    }
+
+    .led-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 10px var(--accent);
+      animation: ledPulse 1.4s infinite ease-in-out;
+    }
+
+    @keyframes ledPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.85); }
+    }
+
+    .hud-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .hud-nav-links {
+        display: none;
+      }
+    }
+
+    .hud-nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .hud-nav-links a {
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    .hud-nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .hud-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .hud-btn {
+      background: rgba(234, 234, 234, 0.05);
+      border: 1px solid var(--border);
+      color: var(--off-white);
+      padding: 0.45rem 0.8rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      border-radius: 3px;
+      transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+    }
+
+    .hud-btn:hover,
+    .hud-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-dim);
+    }
+
+    .sound-bars {
+      display: inline-flex;
+      align-items: flex-end;
+      gap: 2px;
+      height: 10px;
+    }
+
+    .sound-bars span {
+      width: 2px;
+      background: currentColor;
+      height: 3px;
+      transition: height 0.2s ease;
+    }
+
+    .hud-btn.active .sound-bars span:nth-child(1) { animation: eqBar 0.5s infinite alternate; }
+    .hud-btn.active .sound-bars span:nth-child(2) { animation: eqBar 0.35s infinite alternate 0.1s; }
+    .hud-btn.active .sound-bars span:nth-child(3) { animation: eqBar 0.6s infinite alternate 0.2s; }
+
+    @keyframes eqBar {
+      0% { height: 3px; }
+      100% { height: 10px; }
+    }
+
+    /* ==========================================================================
+       7. SECTION 2: HERO (SPINNING PLATTER + ACTUATOR ARM + SCRAMBLE TITLE)
+       ========================================================================== */
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 6rem clamp(1rem, 4vw, 3.5rem) 4rem;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    /* Sticky/Fixed visual feel while About sheet slides up */
+    .hero-platter-stage {
+      position: relative;
+      width: min(94vw, 1280px);
+      height: min(72vw, 680px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem auto;
+      user-select: none;
+    }
+
+    #platter-canvas {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: min(78vw, 640px);
+      height: min(78vw, 640px);
+      transform: translate(-50%, -50%);
+      display: block;
+      filter: drop-shadow(0 0 50px rgba(0, 255, 102, 0.12));
+    }
+
+    /* Actuator Arm SVG Overlay that rotates toward mouse */
+    .actuator-assembly {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: min(78vw, 640px);
+      height: min(78vw, 640px);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .hero-overlay-copy {
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      text-align: center;
+      pointer-events: none;
+    }
+
+    .hero-copy-content {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: clamp(2rem, 7vh, 5rem) 1rem 1rem;
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      max-width: 100%;
+      font-size: clamp(0.68rem, 1.1vw, 0.85rem);
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(7, 8, 9, 0.82);
+      border: 1px solid var(--border-accent);
+      padding: 0.35rem 0.9rem;
+      margin-bottom: 1.1rem;
+      backdrop-filter: blur(6px);
+      pointer-events: auto;
+      text-align: center;
+    }
+
+    .hero-title {
+      position: absolute;
+      top: 12%;
+      left: 50%;
+      z-index: 3;
+      width: max-content;
+      max-width: none;
+      transform: translateX(-50%);
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(1.8rem, 5vw, 4.5rem);
+      line-height: 0.94;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: var(--off-white);
+      text-shadow: 0 12px 40px rgba(0, 0, 0, 0.9), 0 0 24px rgba(0, 0, 0, 0.8);
+      mix-blend-mode: normal;
+      opacity: 0.78;
+      pointer-events: none;
+    }
+
+    .hero-tagline {
+      margin: auto 0 1rem;
+      max-width: 58ch;
+      font-size: clamp(0.82rem, 1.35vw, 1.05rem);
+      line-height: 1.55;
+      color: var(--off-white);
+      background: rgba(7, 8, 9, 0.78);
+      border-left: 3px solid var(--warning);
+      padding: 0.65rem 1.1rem;
+      backdrop-filter: blur(8px);
+      pointer-events: auto;
+      text-align: center;
+    }
+
+    .hero-portrait {
+      display: block;
+      position: absolute;
+      top: 76%;
+      left: 50%;
+      z-index: 5;
+      width: clamp(28rem, 50vw, 48rem);
+      max-height: 78vh;
+      object-fit: contain;
+      opacity: 0;
+      transform: translate(-50%, calc(-50% + 1.25rem));
+    }
+
+    .hero-portrait.is-visible {
+      animation: hero-portrait-reveal 1.8s ease-out 0.35s both;
+    }
+
+    @keyframes hero-portrait-reveal {
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .hero-telemetry-corners {
+      position: absolute;
+      inset: 5.2rem clamp(1rem, 3vw, 2.5rem) 2rem;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 2;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 680px) {
+      .hero-telemetry-corners {
+        display: none;
+      }
+    }
+
+    .telemetry-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .telemetry-box {
+      background: rgba(14, 16, 19, 0.72);
+      border: 1px solid var(--border);
+      padding: 0.55rem 0.8rem;
+      line-height: 1.5;
+    }
+
+    .telemetry-box strong {
+      color: var(--accent);
+    }
+
+    .hero-cta-row {
+      margin-top: 1.8rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      pointer-events: auto;
+    }
+
+    @media (max-width: 680px) {
+      .hero-platter-stage {
+        height: min(112vw, 40rem);
+      }
+
+      #platter-canvas,
+      .actuator-assembly {
+        width: min(92vw, 640px);
+        height: min(92vw, 640px);
+      }
+
+      .hero-overlay-copy {
+        padding: 0;
+      }
+
+      .hero-eyebrow {
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+        padding: 0.35rem 0.5rem;
+      }
+
+      .hero-title {
+        top: 12%;
+        font-size: clamp(1.8rem, 7vw, 2.7rem);
+      }
+
+      .hero-tagline {
+        margin-bottom: 0.6rem;
+        padding: 0.55rem 0.7rem;
+        font-size: 0.7rem;
+      }
+
+      .hero-copy-content {
+        padding: 1rem 0.5rem 0.25rem;
+      }
+
+      .hero-portrait {
+        top: 78%;
+        width: min(96vw, 30rem);
+        max-height: 58vh;
+      }
+
+      .hero-cta-row {
+        margin-top: 1rem;
+        gap: 0.5rem;
+      }
+
+      .hero-cta-row .magnetic-btn {
+        padding: 0.65rem 0.75rem;
+        font-size: 0.6rem;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    .magnetic-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.9rem 1.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: transform 0.22s cubic-bezier(0.23, 1, 0.32, 1),
+                  box-shadow 0.22s ease,
+                  background 0.22s ease,
+                  color 0.22s ease;
+      will-change: transform;
+    }
+
+    .magnetic-btn-primary {
+      background: var(--accent);
+      color: #070809;
+      border: 1px solid var(--accent);
+      box-shadow: 0 0 25px rgba(0, 255, 102, 0.28);
+    }
+
+    .magnetic-btn-primary:hover {
+      background: var(--warning);
+      border-color: var(--warning);
+      color: #070809;
+      box-shadow: 0 0 30px rgba(255, 85, 0, 0.5);
+    }
+
+    .magnetic-btn-secondary {
+      background: rgba(14, 16, 19, 0.85);
+      color: var(--off-white);
+      border: 1px solid var(--border);
+    }
+
+    .magnetic-btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ==========================================================================
+       8. SECTION 3: ABOUT (SHEET SLIDING UP OVER HERO + STORAGE BARS)
+       ========================================================================== */
+    .about-sheet {
+      position: relative;
+      z-index: 10;
+      margin-top: -4vh;
+      background: var(--bg-panel);
+      border-top: 2px solid var(--accent);
+      border-top-left-radius: clamp(24px, 4vw, 56px);
+      border-top-right-radius: clamp(24px, 4vw, 56px);
+      box-shadow: 0 -30px 90px rgba(0, 0, 0, 0.85);
+      padding: clamp(3rem, 7vw, 6.5rem) clamp(1.25rem, 5vw, 5rem);
+      transition: background-color 0.55s ease, border-color 0.55s ease;
+    }
+
+    .sheet-handle {
+      width: 72px;
+      height: 5px;
+      background: var(--border-accent);
+      border-radius: 99px;
+      margin: -1.5rem auto 2.5rem;
+    }
+
+    .section-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.9rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.76rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .section-meta-bar span.tag-index {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: clamp(2rem, 5vw, 4.5rem);
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .about-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .about-heading {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 3.8vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .about-bio {
+      font-size: clamp(0.95rem, 1.25vw, 1.12rem);
+      line-height: 1.75;
+      color: var(--off-white);
+      opacity: 0.9;
+      margin-bottom: 2rem;
+    }
+
+    .about-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .stat-card {
+      background: var(--bg-dark);
+      border: 1px solid var(--border);
+      padding: 1.15rem;
+      border-left: 3px solid var(--accent);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--warning);
+    }
+
+    .stat-value {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 2.5vw, 2.1rem);
+      font-weight: 900;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+
+    /* Storage Capacity Skill Bars */
+    .storage-bay-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .storage-volume-card {
+      background: var(--bg-dark);
+      border: 1px solid var(--border);
+      padding: 1.25rem 1.4rem;
+      position: relative;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .storage-volume-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 8px 30px rgba(0, 255, 102, 0.08);
+    }
+
+    .volume-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.45rem;
+    }
+
+    .volume-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--off-white);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .volume-drive-tag {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.45rem;
+      background: var(--accent-dim);
+      color: var(--accent);
+      border: 1px solid var(--border-accent);
+      font-weight: 700;
+    }
+
+    .volume-status {
+      font-size: 0.73rem;
+      color: var(--warning);
+      letter-spacing: 0.06em;
+      font-weight: 600;
+    }
+
+    .volume-bar-outer {
+      width: 100%;
+      height: 18px;
+      background: rgba(234, 234, 234, 0.06);
+      border: 1px solid var(--border);
+      padding: 2px;
+      margin: 0.65rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .volume-bar-inner {
+      height: 100%;
+      width: 0%;
+      background: repeating-linear-gradient(
+        90deg,
+        var(--accent) 0px,
+        var(--accent) 8px,
+        transparent 8px,
+        transparent 11px
+      );
+      transition: width 1.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .storage-volume-card[data-high="true"] .volume-bar-inner {
+      background: repeating-linear-gradient(
+        90deg,
+        var(--accent) 0px,
+        var(--accent) 8px,
+        transparent 8px,
+        transparent 11px
+      ), linear-gradient(90deg, transparent 80%, var(--warning) 100%);
+    }
+
+    .volume-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.74rem;
+      color: var(--muted);
+      gap: 1rem;
+    }
+
+    /* ==========================================================================
+       9. SECTION 5: MARQUEE TICKER BETWEEN SECTIONS
+       ========================================================================== */
+    .marquee-strip {
+      position: relative;
+      z-index: 12;
+      background: var(--accent);
+      color: #070809;
+      padding: 0.95rem 0;
+      overflow: hidden;
+      border-top: 2px solid #070809;
+      border-bottom: 2px solid #070809;
+      user-select: none;
+    }
+
+    .marquee-strip-alt {
+      background: var(--warning);
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeRoll 28s linear infinite;
+    }
+
+    .marquee-strip:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    .marquee-item {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(0.95rem, 1.8vw, 1.35rem);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0 1.6rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 1.6rem;
+      white-space: nowrap;
+    }
+
+    .marquee-sep {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #070809;
+      transform: rotate(45deg);
+    }
+
+    @keyframes marqueeRoll {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+
+    /* ==========================================================================
+       10. SECTION 4: WORKS ("RECOVERED FILES" WITH CORRUPTED BLOCK ASSEMBLY)
+       ========================================================================== */
+    .works-section {
+      position: relative;
+      z-index: 11;
+      padding: clamp(4rem, 8vw, 7.5rem) clamp(1.25rem, 5vw, 5rem);
+      background: var(--bg-dark);
+      transition: background-color 0.55s ease;
+    }
+
+    .works-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .works-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 5.2vw, 4.6rem);
+      font-weight: 900;
+      line-height: 0.98;
+      text-transform: uppercase;
+      letter-spacing: -0.03em;
+    }
+
+    .works-subtitle {
+      max-width: 44ch;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .recovered-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 370px), 1fr));
+      gap: 1.75rem;
+    }
+
+    /* File Card + Corrupted Block Assembly Animation */
+    .file-card {
+      position: relative;
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 340px;
+      overflow: hidden;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.3s ease,
+                  box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(36px) scale(0.97);
+    }
+
+    .file-card.assembled {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .file-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65), 0 0 25px var(--accent-dim);
+    }
+
+    /* Corrupted Blocks Overlay that de-glitches when card enters viewport */
+    .corrupt-shards {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 5;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    .corrupt-shard {
+      background: var(--bg-dark);
+      border: 1px dashed rgba(0, 255, 102, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      color: var(--warning);
+      font-family: var(--font-mono);
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+                  opacity 0.45s ease;
+    }
+
+    .file-card.assembled .corrupt-shard {
+      opacity: 0;
+      transform: scale(0.2) translate3d(var(--tx, 20px), var(--ty, -20px), 0);
+    }
+
+    .file-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.85rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.72rem;
+    }
+
+    .file-id-badge {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .file-sector-badge {
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .file-card-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 1.9vw, 1.55rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+      color: var(--off-white);
+    }
+
+    .file-card-desc {
+      font-size: 0.86rem;
+      line-height: 1.6;
+      color: var(--muted);
+      margin-bottom: 1.4rem;
+    }
+
+    .file-hex-ribbon {
+      font-size: 0.65rem;
+      color: rgba(0, 255, 102, 0.65);
+      background: rgba(7, 8, 9, 0.65);
+      border: 1px solid rgba(0, 255, 102, 0.18);
+      padding: 0.45rem 0.65rem;
+      margin-bottom: 1.15rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .file-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .file-tag {
+      font-size: 0.68rem;
+      padding: 0.22rem 0.55rem;
+      background: rgba(234, 234, 234, 0.05);
+      border: 1px solid var(--border);
+      color: var(--off-white);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .file-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0.9rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+    }
+
+    .file-card:hover .file-card-footer {
+      color: var(--warning);
+    }
+
+    /* ==========================================================================
+       11. FULLSCREEN PROJECT DETAIL MODAL ("HEX / FILE INSPECTOR")
+       ========================================================================== */
+    .file-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 9500;
+      background: rgba(5, 6, 7, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(1rem, 4vw, 3rem);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .file-modal-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .file-modal-window {
+      width: min(100%, 960px);
+      max-height: 90vh;
+      background: #0B0D10;
+      color: #EAEAEA;
+      border: 1px solid var(--accent);
+      box-shadow: 0 0 80px rgba(0, 255, 102, 0.2);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transform: scale(0.95) translateY(16px);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .file-modal-backdrop.open .file-modal-window {
+      transform: scale(1) translateY(0);
+    }
+
+    .modal-titlebar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.95rem 1.5rem;
+      background: rgba(0, 255, 102, 0.1);
+      border-bottom: 1px solid rgba(0, 255, 102, 0.35);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+    }
+
+    .modal-close-btn {
+      background: var(--warning);
+      color: #070809;
+      border: none;
+      padding: 0.4rem 0.9rem;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .modal-body {
+      padding: clamp(1.5rem, 3.5vw, 2.75rem);
+      overflow-y: auto;
+    }
+
+    .modal-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+      padding: 1rem;
+      background: rgba(234, 234, 234, 0.03);
+      border: 1px solid rgba(234, 234, 234, 0.1);
+      font-size: 0.76rem;
+    }
+
+    .modal-meta-item span {
+      display: block;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .modal-meta-item strong {
+      color: var(--accent);
+    }
+
+    .modal-project-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 1.15rem;
+    }
+
+    .modal-project-desc {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: rgba(234, 234, 234, 0.88);
+      margin-bottom: 1.75rem;
+    }
+
+    .modal-metrics-list {
+      list-style: none;
+      margin-bottom: 2rem;
+      display: grid;
+      gap: 0.65rem;
+    }
+
+    .modal-metrics-list li {
+      padding: 0.75rem 1rem;
+      background: rgba(0, 255, 102, 0.06);
+      border-left: 3px solid var(--accent);
+      font-size: 0.88rem;
+    }
+
+    /* ==========================================================================
+       12. SECTION 6: CONTACT ("SAFE TO REMOVE HARDWARE" SCREEN)
+       ========================================================================== */
+    .contact-section {
+      position: relative;
+      z-index: 11;
+      min-height: 92vh;
+      padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 5vw, 5rem) 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: var(--bg-panel);
+      border-top: 1px solid var(--border);
+      transition: background-color 0.55s ease;
+    }
+
+    .safe-eject-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.75rem 1.25rem;
+      background: var(--accent-dim);
+      border: 1px solid var(--border-accent);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      width: fit-content;
+    }
+
+    .contact-giant-cta {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(3.2rem, 11vw, 10.5rem);
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      margin: 0.5rem 0 2rem;
+      display: inline-block;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 2.5rem;
+      align-items: end;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 860px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .clock-terminal {
+      background: var(--bg-dark);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+    }
+
+    .clock-label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .clock-time {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3.2vw, 2.5rem);
+      font-weight: 900;
+      color: var(--accent);
+      font-variant-numeric: tabular-nums;
+      margin-bottom: 0.4rem;
+    }
+
+    .clock-sub {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .contact-links-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    @media (max-width: 520px) {
+      .contact-links-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contact-port-card {
+      background: var(--bg-dark);
+      border: 1px solid var(--border);
+      padding: 1.25rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.75rem;
+      transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
+    }
+
+    .contact-port-card:hover {
+      border-color: var(--accent);
+      background: var(--accent-dim);
+      transform: translateY(-4px);
+    }
+
+    .port-type {
+      font-size: 0.68rem;
+      color: var(--muted);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .port-name {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--off-white);
+    }
+
+    .port-handle {
+      font-size: 0.76rem;
+      color: var(--accent);
+      word-break: break-all;
+    }
+
+    .footer-bottom {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.74rem;
+      color: var(--muted);
+    }
+
+    /* ==========================================================================
+       13. REDUCED MOTION ACCESSIBILITY SUPPORT
+       ========================================================================== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .film-grain {
+        display: none !important;
+      }
+      .file-card {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .corrupt-shards {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Atmospheric Overlays -->
+  <div class="crt-scanlines" aria-hidden="true"></div>
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="glitch-transition-overlay" id="glitch-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor: Hard Drive Read/Write Head -->
+  <div class="rw-cursor" id="rw-cursor" aria-hidden="true">
+    <svg class="rw-cursor-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Outer Target Gimbal -->
+      <circle cx="32" cy="32" r="22" stroke="var(--accent)" stroke-width="1" stroke-dasharray="6 4" opacity="0.75" />
+      <!-- Read/Write Slider Fork -->
+      <path d="M32 4 L36 16 L28 16 Z" fill="var(--warning)" />
+      <path d="M12 32 L22 32 M42 32 L52 32 M32 12 L32 22 M32 42 L32 52" stroke="var(--accent)" stroke-width="1.4" />
+      <!-- Micro Magnetic Core -->
+      <rect x="29" y="29" width="6" height="6" stroke="var(--warning)" stroke-width="1.5" />
+    </svg>
+    <div class="rw-cursor-label" id="rw-cursor-label">TRK:000 // SEC:00</div>
+  </div>
+
+  <!-- ==========================================================================
+       HUD TOP NAVIGATION BAR
+       ========================================================================== -->
+  <header class="hud-header">
+    <a href="#hero" class="hud-brand chromatic-glitch">
+      <span class="led-dot"></span>
+      <span id="hud-name">DATA RECOVERY LAB</span>
+    </a>
+
+    <nav class="hud-nav" aria-label="Primary Navigation">
+      <div class="hud-nav-links">
+        <a href="#hero" class="chromatic-glitch">[01. PLATTER]</a>
+        <a href="#about" class="chromatic-glitch">[02. DIAGNOSTICS]</a>
+        <a href="#works" class="chromatic-glitch">[03. RECOVERED_FILES]</a>
+        <a href="#contact" class="chromatic-glitch">[04. EJECT_PORT]</a>
+      </div>
+
+      <div class="hud-controls">
+        <!-- Optional HDD Click/Spin Sound Toggle (Muted by Default) -->
+        <button type="button" class="hud-btn" id="audio-toggle-btn" aria-pressed="false" title="Toggle synthesized HDD acoustic telemetry">
+          <span class="sound-bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span id="audio-toggle-label">HDD AUDIO: MUTED</span>
+        </button>
+
+        <!-- High-Contrast Cleanroom Polarity Toggle -->
+        <button type="button" class="hud-btn" id="polarity-toggle-btn" title="Invert cleanroom color polarity">
+          <span>POLARITY</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         SECTION 2: HERO (SPINNING PLATTER + ACTUATOR ARM + GIANT TYPE)
+         ======================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Corner Diagnostic Telemetry Readouts -->
+      <div class="hero-telemetry-corners" aria-hidden="true">
+        <div class="telemetry-row">
+          <div class="telemetry-box">
+            <div>SPINDLE VELOCITY: <strong>7,200 RPM [LOCKED]</strong></div>
+            <div id="hero-serial-readout">SERIAL: SN-DRL-8804-X9</div>
+          </div>
+          <div class="telemetry-box" style="text-align: right;">
+            <div>ACTUATOR SERVO: <strong id="servo-angle-readout">TRACKING MOUSE</strong></div>
+            <div id="hero-firmware-readout">FW: REV.4.09-CLEANROOM</div>
+          </div>
+        </div>
+        <div class="telemetry-row">
+          <div class="telemetry-box">
+            <div>HEAD FLY HEIGHT: <strong>3.2 NANOMETERS</strong></div>
+            <div>FLUX DENSITY: <strong>1.42 Tb/in²</strong></div>
+          </div>
+          <div class="telemetry-box" style="text-align: right;">
+            <div>ACTIVE CYLINDER: <strong id="cylinder-readout">CYL_00412</strong></div>
+            <div>SCROLL TO MOUNT DIAGNOSTIC SHEET &darr;</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spinning Hard Drive Platter Stage -->
+      <div class="hero-platter-stage" id="platter-stage">
+        <canvas id="platter-canvas" width="760" height="760" aria-label="Interactive spinning hard drive platter with concentric data tracks"></canvas>
+
+        <!-- Moving Voice-Coil Actuator Arm SVG -->
+        <svg class="actuator-assembly" viewBox="0 0 760 760" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g id="actuator-arm-group" style="transform-origin: 650px 620px; transition: transform 0.08s ease-out;">
+            <!-- Actuator Pivot Bearing Housing -->
+            <circle cx="650" cy="620" r="54" fill="#101318" stroke="var(--accent)" stroke-width="2" />
+            <circle cx="650" cy="620" r="24" fill="#070809" stroke="var(--warning)" stroke-width="2" />
+            <!-- Voice Coil Triangular Arm -->
+            <path d="M618 595 L382 372 L396 355 L645 570 Z" fill="rgba(16, 19, 24, 0.92)" stroke="var(--off-white)" stroke-width="1.6" />
+            <!-- Weight Reduction Cutouts -->
+            <circle cx="555" cy="520" r="14" fill="#070809" stroke="var(--accent)" stroke-width="1" />
+            <circle cx="505" cy="472" r="11" fill="#070809" stroke="var(--accent)" stroke-width="1" />
+            <circle cx="460" cy="430" r="8" fill="#070809" stroke="var(--accent)" stroke-width="1" />
+            <!-- Read/Write Gimbal Tip & Laser Point -->
+            <rect x="366" y="352" width="22" height="14" rx="2" transform="rotate(-42 366 352)" fill="var(--warning)" />
+            <circle cx="372" cy="356" r="5" fill="var(--accent)" />
+            <circle cx="372" cy="356" r="14" stroke="var(--accent)" stroke-width="1" stroke-dasharray="3 3" />
+          </g>
+        </svg>
+
+        <!-- Giant Layered Name & Scramble Text -->
+        <div class="hero-overlay-copy">
+          <h1 class="hero-title chromatic-glitch" id="hero-name" data-scramble="true">SUPHAWIT R.</h1>
+          <div class="hero-copy-content">
+            <div class="hero-eyebrow" id="hero-role">DATA SUPPORT SPECIALIST // HDD & STORAGE SYSTEMS</div>
+            <p class="hero-tagline" id="hero-tagline">
+              RESCUING CRITICAL BYTES FROM THE BRINK OF MAGNETIC OBLIVION.
+            </p>
+            <div class="hero-cta-row">
+              <a href="#works" class="magnetic-btn magnetic-btn-primary">
+                <span>INSPECT RECOVERED FILES</span>
+                <span>&rarr;</span>
+              </a>
+              <a href="#contact" class="magnetic-btn magnetic-btn-secondary">
+                <span>INITIATE HANDSHAKE</span>
+              </a>
+            </div>
+          </div>
+          <img class="hero-portrait" src="1000065932-removebg-preview.png" alt="Portrait of Suphawit R." />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: ABOUT (SLIDES UP OVER HERO LIKE A SHEET)
+         ======================================================================== -->
+    <section class="about-sheet" id="about" data-invert-trigger="false">
+      <div class="sheet-handle" aria-hidden="true"></div>
+
+      <div class="section-meta-bar">
+        <span class="tag-index">// SECTION 02 : SYSTEM DIAGNOSTICS & OPERATOR BIO</span>
+        <span id="about-location-readout">LOC: BANGKOK, TH</span>
+      </div>
+
+      <div class="about-layout">
+        <!-- Left Column: Bio + Key Cleanroom Metrics -->
+        <div>
+          <h2 class="about-heading chromatic-glitch" id="about-heading">
+            CLEANROOM PRECISION. SECTOR-LEVEL OBSESSION.
+          </h2>
+          <p class="about-bio" id="about-bio"></p>
+
+          <div class="about-stat-grid" id="about-stats-grid">
+            <!-- Populated from LAB_CONFIG -->
+          </div>
+        </div>
+
+        <!-- Right Column: Storage Capacity Bars -->
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-size: 0.78rem; color: var(--muted);">
+            <span>MOUNTED SKILL PARTITIONS (5 VOLUMES)</span>
+            <span style="color: var(--accent);">STATUS: HEALTHY</span>
+          </div>
+          <div class="storage-bay-list" id="skills-bay-list">
+            <!-- Populated from LAB_CONFIG -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 5A: MARQUEE TICKER
+         ======================================================================== -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track-1"></div>
+    </div>
+
+    <!-- ========================================================================
+         SECTION 4: WORKS ("RECOVERED FILES" WITH CORRUPTED BLOCK ASSEMBLY)
+         ======================================================================== -->
+    <section class="works-section" id="works">
+      <div class="section-meta-bar">
+        <span class="tag-index">// SECTION 03 : RECOVERED FILE ARCHIVE</span>
+        <span>CLICK ANY SECTOR RECORD FOR FULL HEX INSPECTION</span>
+      </div>
+
+      <div class="works-header">
+        <h2 class="works-title chromatic-glitch">RECOVERED FILES</h2>
+        <p class="works-subtitle">
+          Each archive below reconstructs itself from fragmented sectors as you scan down the platter. Select any file to mount its full technical dossier.
+        </p>
+      </div>
+
+      <div class="recovered-grid" id="projects-grid">
+        <!-- Populated from LAB_CONFIG.projects -->
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 5B: SECOND MARQUEE TICKER (WARNING ORANGE)
+         ======================================================================== -->
+    <div class="marquee-strip" style="background: var(--warning);" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track-2" style="animation-direction: reverse;"></div>
+    </div>
+
+    <!-- ========================================================================
+         SECTION 6: CONTACT ("SAFE TO REMOVE HARDWARE" + ASIA/BANGKOK LIVE TIME)
+         ======================================================================== -->
+    <section class="contact-section" id="contact">
+      <div>
+        <div class="section-meta-bar">
+          <span class="tag-index">// SECTION 04 : EXTERNAL BUS & SAFE EJECTION</span>
+          <span>WRITE CACHE FLUSHED • READY FOR TRANSMISSION</span>
+        </div>
+
+        <div class="safe-eject-banner">
+          <span class="led-dot"></span>
+          <span>SYSTEM MESSAGE: SAFE TO REMOVE HARDWARE — OR START A CONVERSATION</span>
+        </div>
+
+        <div>
+          <a href="mailto:your.email@example.com" id="giant-lets-talk" class="contact-giant-cta chromatic-glitch">
+            LET'S TALK_
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Live Local Time (Asia/Bangkok) -->
+        <div class="clock-terminal">
+          <div class="clock-label">OPERATOR LOCAL TIME // ASIA/BANGKOK (UTC+7)</div>
+          <div class="clock-time" id="bangkok-clock">--:--:-- --</div>
+          <div class="clock-sub" id="bangkok-date">SYNCHRONIZING REAL-TIME CLOCK...</div>
+        </div>
+
+        <!-- Links: EMAIL / LINKEDIN / GITHUB / LINE -->
+        <div class="contact-links-grid" id="contact-links-grid">
+          <!-- Populated from LAB_CONFIG.contact -->
+        </div>
+      </div>
+
+      <footer class="footer-bottom">
+        <div>
+          &copy; <span id="footer-year">2026</span> <span id="footer-name">SUPHAWIT R.</span> // ALL SECTORS VERIFIED.
+        </div>
+        <div>
+          BUILT IN CLEANROOM ENVIRONMENT • ZERO EXTERNAL FRAMEWORKS REQUIRED
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FULLSCREEN PROJECT DETAIL MODAL
+       ========================================================================== -->
+  <div class="file-modal-backdrop" id="file-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="file-modal-window">
+      <div class="modal-titlebar">
+        <span id="modal-file-id">INSPECTING: FILE_001.RAW</span>
+        <button type="button" class="modal-close-btn" id="modal-close-btn">[ESC] UNMOUNT FILE &times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-meta-grid">
+          <div class="modal-meta-item">
+            <span>LBA SECTOR ADDRESS</span>
+            <strong id="modal-sector">0x004F8A10</strong>
+          </div>
+          <div class="modal-meta-item">
+            <span>DATA INTEGRITY</span>
+            <strong id="modal-integrity">100% RECOVERED</strong>
+          </div>
+          <div class="modal-meta-item">
+            <span>ALLOCATED SIZE</span>
+            <strong id="modal-size">42.8 MB</strong>
+          </div>
+          <div class="modal-meta-item">
+            <span>CRC32 STATUS</span>
+            <strong>VERIFIED_CLEAN</strong>
+          </div>
+        </div>
+
+        <h3 class="modal-project-title" id="modal-title">Project Title</h3>
+        <p class="modal-project-desc" id="modal-desc"></p>
+
+        <div style="font-size: 0.75rem; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.75rem;">
+          KEY RECOVERY BENCHMARKS & IMPACT:
+        </div>
+        <ul class="modal-metrics-list" id="modal-metrics"></ul>
+
+        <div class="file-hex-ribbon" id="modal-hex" style="margin-bottom: 1.75rem;"></div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="magnetic-btn magnetic-btn-primary" id="modal-link">
+            <span id="modal-link-text">OPEN EXTERNAL LINK</span>
+            <span>&nearr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       14. APPLICATION JAVASCRIPT (RENDER CONFIG, PLATTER, AUDIO, ANIMATIONS)
+       ========================================================================== -->
+  <script>
+    (function () {
+      "use strict";
+
+      const CFG = window.LAB_CONFIG;
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      /* ------------------------------------------------------------------------
+         A. APPLY CONFIGURATION TO CSS & DOM
+         ------------------------------------------------------------------------ */
+      function applyConfig() {
+        const root = document.documentElement;
+        if (CFG.colors) {
+          if (CFG.colors.bgDark) root.style.setProperty("--bg-dark", CFG.colors.bgDark);
+          if (CFG.colors.bgPanel) root.style.setProperty("--bg-panel", CFG.colors.bgPanel);
+          if (CFG.colors.accentPrimary) root.style.setProperty("--accent", CFG.colors.accentPrimary);
+          if (CFG.colors.accentWarning) root.style.setProperty("--warning", CFG.colors.accentWarning);
+          if (CFG.colors.offWhite) root.style.setProperty("--off-white", CFG.colors.offWhite);
+        }
+
+        document.title = `${CFG.name} // Data Recovery Lab`;
+        document.getElementById("hud-name").textContent = `${CFG.name} // LAB`;
+        document.getElementById("hero-name").textContent = CFG.name;
+        document.getElementById("hero-role").textContent = CFG.role;
+        document.getElementById("hero-tagline").textContent = CFG.tagline;
+        document.getElementById("hero-serial-readout").textContent = `SERIAL: ${CFG.serialNumber}`;
+        document.getElementById("hero-firmware-readout").textContent = CFG.firmware;
+        document.getElementById("about-location-readout").textContent = `LOC: ${CFG.location}`;
+        document.getElementById("footer-name").textContent = CFG.name;
+        document.getElementById("footer-year").textContent = new Date().getFullYear();
+
+        // About Section
+        document.getElementById("about-heading").textContent = CFG.about.heading;
+        document.getElementById("about-bio").textContent = CFG.about.bio;
+
+        const statsGrid = document.getElementById("about-stats-grid");
+        statsGrid.innerHTML = CFG.about.stats.map(st => `
+          <div class="stat-card">
+            <div class="stat-value">${st.value}</div>
+            <div class="stat-label">${st.label}</div>
+          </div>
+        `).join("");
+
+        // Storage Capacity Skill Bars
+        const skillsList = document.getElementById("skills-bay-list");
+        skillsList.innerHTML = CFG.about.skills.map(sk => `
+          <div class="storage-volume-card" data-percent="${sk.percent}" data-high="${sk.percent >= 92}">
+            <div class="volume-header">
+              <div class="volume-title">
+                <span class="volume-drive-tag">${sk.driveLetter}</span>
+                <span>${sk.name}</span>
+              </div>
+              <div class="volume-status">${sk.status}</div>
+            </div>
+            <div class="volume-bar-outer" role="progressbar" aria-valuenow="${sk.percent}" aria-valuemin="0" aria-valuemax="100">
+              <div class="volume-bar-inner" style="width: ${prefersReducedMotion ? sk.percent + '%' : '0%'};"></div>
+            </div>
+            <div class="volume-footer">
+              <span>${sk.detail}</span>
+              <span style="white-space: nowrap;">FS: ${sk.filesystem}</span>
+            </div>
+          </div>
+        `).join("");
+
+        // Marquee Strips
+        const marqueeHTML = [...CFG.marqueeItems, ...CFG.marqueeItems, ...CFG.marqueeItems]
+          .map(item => `<div class="marquee-item"><span>${item}</span><span class="marquee-sep"></span></div>`)
+          .join("");
+        document.getElementById("marquee-track-1").innerHTML = marqueeHTML;
+        document.getElementById("marquee-track-2").innerHTML = marqueeHTML;
+
+        // Projects ("Recovered Files")
+        const projectsGrid = document.getElementById("projects-grid");
+        const shardLabels = ["BAD_LBA", "CRC_ERR", "0x7F", "REMAP", "SEEK...", "RAW_01", "SYNC", "PARITY", "0xFF", "MFT_0", "HEAD_1", "RECOV", "0x00", "LBA_OK", "LOCK", "100%"];
+
+        projectsGrid.innerHTML = CFG.projects.map((proj, idx) => {
+          const shards = Array.from({ length: 16 }).map((_, sIdx) => {
+            const tx = ((sIdx % 4) - 1.5) * 45;
+            const ty = (Math.floor(sIdx / 4) - 1.5) * 45;
+            return `<div class="corrupt-shard" style="--tx:${tx}px; --ty:${ty}px; transition-delay:${(sIdx * 18)}ms;">${shardLabels[sIdx]}</div>`;
+          }).join("");
+
+          return `
+            <article class="file-card" data-project-index="${idx}" tabindex="0" role="button" aria-label="Inspect recovered file ${proj.title}">
+              <div class="corrupt-shards" aria-hidden="true">${shards}</div>
+              <div>
+                <div class="file-card-top">
+                  <span class="file-id-badge">&#9632; ${proj.id}</span>
+                  <span class="file-sector-badge">LBA: ${proj.sector} // ${proj.size}</span>
+                </div>
+                <h3 class="file-card-title chromatic-glitch">${proj.title}</h3>
+                <p class="file-card-desc">${proj.oneLiner}</p>
+              </div>
+              <div>
+                <div class="file-hex-ribbon">HEX: ${proj.hexPreview}</div>
+                <div class="file-tags">
+                  ${proj.tags.map(t => `<span class="file-tag">${t}</span>`).join("")}
+                </div>
+                <div class="file-card-footer">
+                  <span>STATUS: ${proj.integrity}</span>
+                  <span>MOUNT FILE &rarr;</span>
+                </div>
+              </div>
+            </article>
+          `;
+        }).join("");
+
+        // Contact Links
+        document.getElementById("giant-lets-talk").href = CFG.contact.email;
+        const contactGrid = document.getElementById("contact-links-grid");
+        const ports = [
+          { port: "PORT_01 // SMTP", name: "EMAIL", handle: CFG.contact.emailDisplay, url: CFG.contact.email },
+          { port: "PORT_02 // NET", name: "LINKEDIN", handle: "linkedin.com/in/profile", url: CFG.contact.linkedin },
+          { port: "PORT_03 // GIT", name: "GITHUB", handle: "github.com/repository", url: CFG.contact.github },
+          { port: "PORT_04 // MSG", name: "LINE", handle: CFG.contact.lineDisplay, url: CFG.contact.line }
+        ];
+        contactGrid.innerHTML = ports.map(p => `
+          <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="contact-port-card magnetic-btn">
+            <div class="port-type">
+              <span>${p.port}</span>
+              <span>&nearr;</span>
+            </div>
+            <div class="port-name chromatic-glitch">${p.name}</div>
+            <div class="port-handle">${p.handle}</div>
+          </a>
+        `).join("");
+      }
+
+      applyConfig();
+
+      /* ------------------------------------------------------------------------
+         B. SYNTHESIZED WEB AUDIO HDD SOUND ENGINE (MUTED BY DEFAULT)
+         ------------------------------------------------------------------------ */
+      const HddAudio = {
+        ctx: null,
+        enabled: false,
+        spindleGain: null,
+
+        init() {
+          if (this.ctx) return;
+          const AudioCtx = window.AudioContext || window.webkitAudioContext;
+          if (!AudioCtx) return;
+          this.ctx = new AudioCtx();
+
+          // Continuous subtle 120Hz (7200 RPM = 120 RPS) spindle hum
+          const osc = this.ctx.createOscillator();
+          const osc2 = this.ctx.createOscillator();
+          const filter = this.ctx.createBiquadFilter();
+          this.spindleGain = this.ctx.createGain();
+
+          osc.type = "sawtooth";
+          osc.frequency.value = 120; // 7200 RPM fundamental frequency
+          osc2.type = "sine";
+          osc2.frequency.value = 240;
+
+          filter.type = "lowpass";
+          filter.frequency.value = 280;
+
+          this.spindleGain.gain.value = 0.015;
+
+          osc.connect(filter);
+          osc2.connect(filter);
+          filter.connect(this.spindleGain);
+          this.spindleGain.connect(this.ctx.destination);
+
+          osc.start();
+          osc2.start();
+        },
+
+        toggle() {
+          if (!this.ctx) this.init();
+          if (!this.ctx) return false;
+
+          this.enabled = !this.enabled;
+          if (this.enabled) {
+            if (this.ctx.state === "suspended") this.ctx.resume();
+            this.spindleGain.gain.setTargetAtTime(0.018, this.ctx.currentTime, 0.1);
+            this.playHeadSeek(900);
+          } else {
+            this.spindleGain.gain.setTargetAtTime(0.0, this.ctx.currentTime, 0.05);
+          }
+          return this.enabled;
+        },
+
+        // Crisp mechanical actuator click sound
+        playHeadSeek(freq = 1200) {
+          if (!this.enabled || !this.ctx) return;
+          const now = this.ctx.currentTime;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+
+          osc.type = "triangle";
+          osc.frequency.setValueAtTime(freq, now);
+          osc.frequency.exponentialRampToValueAtTime(140, now + 0.022);
+
+          gain.gain.setValueAtTime(0.06, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.025);
+
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start(now);
+          osc.stop(now + 0.028);
+        },
+
+        // Double seek chirp when opening modal or completing scan
+        playDataChirp() {
+          if (!this.enabled || !this.ctx) return;
+          this.playHeadSeek(1600);
+          setTimeout(() => this.playHeadSeek(2100), 45);
+        }
+      };
+
+      const audioBtn = document.getElementById("audio-toggle-btn");
+      const audioLabel = document.getElementById("audio-toggle-label");
+      audioBtn.addEventListener("click", () => {
+        const active = HddAudio.toggle();
+        audioBtn.classList.toggle("active", active);
+        audioBtn.setAttribute("aria-pressed", String(active));
+        audioLabel.textContent = active ? "HDD AUDIO: ONLINE" : "HDD AUDIO: MUTED";
+      });
+
+      // Polarity Inversion Button
+      const polarityBtn = document.getElementById("polarity-toggle-btn");
+      polarityBtn.addEventListener("click", () => {
+        document.body.classList.toggle("theme-inverted");
+        HddAudio.playDataChirp();
+      });
+
+      /* ------------------------------------------------------------------------
+         C. TEXT SCRAMBLE EFFECT FOR HERO NAME
+         ------------------------------------------------------------------------ */
+      const glyphs = "0123456789ABCDEF#$%&*+<>?@[]_~";
+      function scrambleText(el, finalString, duration = 1100) {
+        if (prefersReducedMotion) {
+          el.textContent = finalString;
+          return;
+        }
+        const start = performance.now();
+        const length = finalString.length;
+
+        function tick(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const revealed = Math.floor(progress * length);
+          let out = "";
+          for (let i = 0; i < length; i++) {
+            if (finalString[i] === " ") {
+              out += " ";
+            } else if (i < revealed) {
+              out += finalString[i];
+            } else {
+              out += glyphs[Math.floor(Math.random() * glyphs.length)];
+            }
+          }
+          el.textContent = out;
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          } else {
+            el.textContent = finalString;
+          }
+        }
+        requestAnimationFrame(tick);
+      }
+
+      scrambleText(document.getElementById("hero-name"), CFG.name, 1200);
+      document.querySelector(".hero-portrait").classList.add("is-visible");
+
+      /* ------------------------------------------------------------------------
+         E. CUSTOM CURSOR + HERO ACTUATOR ARM & SPINNING PLATTER CANVAS
+         ------------------------------------------------------------------------ */
+      const cursorEl = document.getElementById("rw-cursor");
+      const cursorLabel = document.getElementById("rw-cursor-label");
+      const actuatorArm = document.getElementById("actuator-arm-group");
+      const servoReadout = document.getElementById("servo-angle-readout");
+      const cylinderReadout = document.getElementById("cylinder-readout");
+
+      let mouseX = window.innerWidth / 2;
+      let mouseY = window.innerHeight / 2;
+      let targetArmAngle = 0;
+      let currentArmAngle = 0;
+
+      window.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        document.documentElement.style.setProperty("--cursor-x", `${mouseX}px`);
+        document.documentElement.style.setProperty("--cursor-y", `${mouseY}px`);
+
+        // Compute simulated Track & Sector for cursor HUD
+        const trk = Math.floor((mouseX / window.innerWidth) * 1024).toString().padStart(4, "0");
+        const sec = Math.floor((mouseY / window.innerHeight) * 64).toString().padStart(2, "0");
+        cursorLabel.textContent = `TRK:${trk} // SEC:${sec}`;
+
+        // Calculate angle for Actuator Arm across platter tracks (-18 deg to +22 deg)
+        const normDistance = Math.hypot(mouseX - window.innerWidth / 2, mouseY - window.innerHeight / 2) / (Math.min(window.innerWidth, window.innerHeight) * 0.5);
+        const clamped = Math.max(0, Math.min(1, normDistance));
+        targetArmAngle = (clamped * 32) - 14;
+
+        if (servoReadout) servoReadout.textContent = `${targetArmAngle.toFixed(1)}° RADIAL`;
+        if (cylinderReadout) cylinderReadout.textContent = `CYL_${trk}`;
+      }, { passive: true });
+
+      window.addEventListener("mousedown", () => {
+        cursorEl.classList.add("is-clicking");
+        HddAudio.playHeadSeek(1450);
+      });
+      window.addEventListener("mouseup", () => {
+        cursorEl.classList.remove("is-clicking");
+      });
+
+      // Hover state for interactive elements
+      document.addEventListener("mouseover", (e) => {
+        const interactive = e.target.closest("a, button, .file-card, .storage-volume-card");
+        if (interactive) {
+          cursorEl.classList.add("is-hovering");
+          HddAudio.playHeadSeek(1850);
+        } else {
+          cursorEl.classList.remove("is-hovering");
+        }
+      });
+
+      // Hero Platter Canvas Rendering (60fps Concentric Tracks, Sector Arcs & Metallic Reflection)
+      const canvas = document.getElementById("platter-canvas");
+      const ctx = canvas.getContext("2d");
+      let platterRotation = 0;
+
+      // Pre-generate data sector arcs on concentric tracks
+      const tracks = [];
+      for (let t = 0; t < 14; t++) {
+        const radius = 95 + t * 18.5;
+        const segments = 6 + (t % 5) * 2;
+        tracks.push({
+          radius,
+          segments,
+          speedFactor: (t % 2 === 0 ? 1 : 0.75),
+          hasHighlight: t === 4 || t === 9 || t === 12
+        });
+      }
+
+      function renderPlatter() {
+        const w = canvas.width;
+        const h = canvas.height;
+        const cx = w / 2;
+        const cy = h / 2;
+
+        ctx.clearRect(0, 0, w, h);
+
+        // 1. Outer CNC Aluminum Platter Bezel
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(cx, cy, 358, 0, Math.PI * 2);
+        const platterGrad = ctx.createRadialGradient(cx, cy, 40, cx, cy, 358);
+        platterGrad.addColorStop(0, "#0A0C0F");
+        platterGrad.addColorStop(0.55, "#12161C");
+        platterGrad.addColorStop(0.92, "#0B0D11");
+        platterGrad.addColorStop(1, "#1D242C");
+        ctx.fillStyle = platterGrad;
+        ctx.fill();
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "rgba(0, 255, 102, 0.32)";
+        ctx.stroke();
+
+        // 2. Anisotropic Conic Specular Sheen (rotates slightly with mouse)
+        const mouseAngle = Math.atan2(mouseY - window.innerHeight / 2, mouseX - window.innerWidth / 2);
+        for (let i = 0; i < 2; i++) {
+          const baseAngle = mouseAngle + i * Math.PI;
+          ctx.beginPath();
+          ctx.moveTo(cx, cy);
+          ctx.arc(cx, cy, 354, baseAngle - 0.28, baseAngle + 0.28);
+          ctx.closePath();
+          ctx.fillStyle = "rgba(0, 255, 102, 0.045)";
+          ctx.fill();
+        }
+
+        // 3. Concentric Magnetic Tracks & Rotating Sector Markers
+        tracks.forEach((trk, idx) => {
+          // Base track ring
+          ctx.beginPath();
+          ctx.arc(cx, cy, trk.radius, 0, Math.PI * 2);
+          ctx.strokeStyle = "rgba(234, 234, 234, 0.07)";
+          ctx.lineWidth = 1;
+          ctx.stroke();
+
+          // Rotating data blocks
+          const rot = platterRotation * trk.speedFactor + idx * 0.4;
+          const step = (Math.PI * 2) / trk.segments;
+          for (let s = 0; s < trk.segments; s++) {
+            const startA = rot + s * step;
+            const endA = startA + step * 0.55;
+            ctx.beginPath();
+            ctx.arc(cx, cy, trk.radius, startA, endA);
+            if (trk.hasHighlight && s === 0) {
+              ctx.strokeStyle = "#FF5500";
+              ctx.lineWidth = 3;
+            } else {
+              ctx.strokeStyle = idx % 3 === 0 ? "rgba(0, 255, 102, 0.42)" : "rgba(234, 234, 234, 0.18)";
+              ctx.lineWidth = 1.6;
+            }
+            ctx.stroke();
+          }
+        });
+
+        // 4. Radial Sector Division Lines (16 sectors)
+        for (let r = 0; r < 16; r++) {
+          const angle = platterRotation * 0.5 + (r * Math.PI) / 8;
+          ctx.beginPath();
+          ctx.moveTo(cx + Math.cos(angle) * 85, cy + Math.sin(angle) * 85);
+          ctx.lineTo(cx + Math.cos(angle) * 348, cy + Math.sin(angle) * 348);
+          ctx.strokeStyle = "rgba(0, 255, 102, 0.06)";
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+
+        // 5. Center Spindle Motor Hub
+        ctx.beginPath();
+        ctx.arc(cx, cy, 74, 0, Math.PI * 2);
+        ctx.fillStyle = "#070809";
+        ctx.fill();
+        ctx.lineWidth = 2.5;
+        ctx.strokeStyle = "#00FF66";
+        ctx.stroke();
+
+        // Spindle clamping screws (6 screws rotating)
+        for (let k = 0; k < 6; k++) {
+          const sa = platterRotation * 1.8 + (k * Math.PI) / 3;
+          const sx = cx + Math.cos(sa) * 52;
+          const sy = cy + Math.sin(sa) * 52;
+          ctx.beginPath();
+          ctx.arc(sx, sy, 4.5, 0, Math.PI * 2);
+          ctx.fillStyle = "#FF5500";
+          ctx.fill();
+        }
+
+        // Center Axis Bore
+        ctx.beginPath();
+        ctx.arc(cx, cy, 22, 0, Math.PI * 2);
+        ctx.strokeStyle = "rgba(234, 234, 234, 0.45)";
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+
+        ctx.restore();
+
+        // Smoothly interpolate actuator arm toward mouse angle
+        currentArmAngle += (targetArmAngle - currentArmAngle) * 0.14;
+        if (actuatorArm) {
+          actuatorArm.style.transform = `rotate(${currentArmAngle.toFixed(2)}deg)`;
+        }
+
+        if (!prefersReducedMotion) {
+          platterRotation += 0.018;
+          requestAnimationFrame(renderPlatter);
+        }
+      }
+
+      renderPlatter();
+
+      /* ------------------------------------------------------------------------
+         F. SCROLL OBSERVERS: SKILL BARS, FILE ASSEMBLY & SECTION COLOR INVERSION
+         ------------------------------------------------------------------------ */
+      // 1. Storage Capacity Bars fill on scroll
+      const volumeCards = document.querySelectorAll(".storage-volume-card");
+      const skillObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const pct = entry.target.getAttribute("data-percent");
+            const bar = entry.target.querySelector(".volume-bar-inner");
+            if (bar) bar.style.width = `${pct}%`;
+          }
+        });
+      }, { threshold: 0.25 });
+      volumeCards.forEach(card => skillObserver.observe(card));
+
+      // 2. Recovered File Cards assemble from glitching corrupted blocks on scroll
+      const fileCards = document.querySelectorAll(".file-card");
+      const fileObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("assembled");
+            HddAudio.playHeadSeek(1100);
+          }
+        });
+      }, { threshold: 0.18 });
+      fileCards.forEach(card => fileObserver.observe(card));
+
+      // 3. Section-based Color Inversion when Contact ("Safe to remove hardware") enters view
+      const contactSection = document.getElementById("contact");
+      const invertObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            document.body.classList.add("theme-inverted");
+          } else {
+            document.body.classList.remove("theme-inverted");
+          }
+        });
+      }, { threshold: 0.35 });
+      if (contactSection) invertObserver.observe(contactSection);
+
+      /* ------------------------------------------------------------------------
+         G. MAGNETIC BUTTON INTERACTION
+         ------------------------------------------------------------------------ */
+      if (!prefersReducedMotion) {
+        const magneticBtns = document.querySelectorAll(".magnetic-btn");
+        magneticBtns.forEach(btn => {
+          btn.addEventListener("mousemove", (e) => {
+            const rect = btn.getBoundingClientRect();
+            const dx = e.clientX - (rect.left + rect.width / 2);
+            const dy = e.clientY - (rect.top + rect.height / 2);
+            btn.style.transform = `translate3d(${dx * 0.22}px, ${dy * 0.28}px, 0)`;
+          });
+          btn.addEventListener("mouseleave", () => {
+            btn.style.transform = "translate3d(0, 0, 0)";
+          });
+        });
+      }
+
+      /* ------------------------------------------------------------------------
+         H. FULLSCREEN PROJECT DETAIL MODAL ("RECOVERED FILES" INSPECTOR)
+         ------------------------------------------------------------------------ */
+      const modalBackdrop = document.getElementById("file-modal");
+      const modalCloseBtn = document.getElementById("modal-close-btn");
+
+      function openProjectModal(index) {
+        const proj = CFG.projects[index];
+        if (!proj) return;
+
+        document.getElementById("modal-file-id").textContent = `INSPECTING: ${proj.id}`;
+        document.getElementById("modal-sector").textContent = proj.sector;
+        document.getElementById("modal-integrity").textContent = proj.integrity;
+        document.getElementById("modal-size").textContent = proj.size;
+        document.getElementById("modal-title").textContent = proj.title;
+        document.getElementById("modal-desc").textContent = proj.description;
+        document.getElementById("modal-hex").textContent = `RAW HEADER BYTES: ${proj.hexPreview}`;
+
+        const metricsList = document.getElementById("modal-metrics");
+        metricsList.innerHTML = (proj.metrics || []).map(m => `<li>&#10003; ${m}</li>`).join("");
+
+        const linkEl = document.getElementById("modal-link");
+        linkEl.href = proj.link || "#";
+        document.getElementById("modal-link-text").textContent = proj.linkText || "OPEN PROJECT LINK";
+
+        modalBackdrop.classList.add("open");
+        HddAudio.playDataChirp();
+      }
+
+      function closeProjectModal() {
+        modalBackdrop.classList.remove("open");
+        HddAudio.playHeadSeek(750);
+      }
+
+      document.getElementById("projects-grid").addEventListener("click", (e) => {
+        const card = e.target.closest(".file-card");
+        if (!card) return;
+        const idx = Number(card.getAttribute("data-project-index"));
+        openProjectModal(idx);
+      });
+
+      document.getElementById("projects-grid").addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          const card = e.target.closest(".file-card");
+          if (!card) return;
+          e.preventDefault();
+          const idx = Number(card.getAttribute("data-project-index"));
+          openProjectModal(idx);
+        }
+      });
+
+      modalCloseBtn.addEventListener("click", closeProjectModal);
+      modalBackdrop.addEventListener("click", (e) => {
+        if (e.target === modalBackdrop) closeProjectModal();
+      });
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modalBackdrop.classList.contains("open")) {
+          closeProjectModal();
+        }
+      });
+
+      /* ------------------------------------------------------------------------
+         I. LIVE LOCAL TIME CLOCK (ASIA/BANGKOK)
+         ------------------------------------------------------------------------ */
+      const clockTimeEl = document.getElementById("bangkok-clock");
+      const clockDateEl = document.getElementById("bangkok-date");
+
+      function updateBangkokClock() {
+        const now = new Date();
+        try {
+          const timeStr = new Intl.DateTimeFormat("en-US", {
+            timeZone: CFG.timezone || "Asia/Bangkok",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            hour12: false
+          }).format(now);
+
+          const dateStr = new Intl.DateTimeFormat("en-US", {
+            timeZone: CFG.timezone || "Asia/Bangkok",
+            weekday: "short",
+            year: "numeric",
+            month: "short",
+            day: "2-digit"
+          }).format(now);
+
+          clockTimeEl.textContent = `${timeStr} ICT`;
+          clockDateEl.textContent = `${dateStr.toUpperCase()} // ${CFG.location}`;
+        } catch (err) {
+          clockTimeEl.textContent = now.toTimeString().slice(0, 8);
+        }
+      }
+
+      updateBangkokClock();
+      setInterval(updateBangkokClock, 1000);
+    })();
+  </script>
+</body>
+</html>
