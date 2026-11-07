@@ -3,43 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DATA RECOVERY LAB // Portfolio</title>
-  <meta name="description" content="Data Support Specialist & Hard Drive Forensics / Recovery Portfolio" />
-
-  <!-- Google Fonts: Unbounded (Ultra-Bold Display) + JetBrains Mono (Readouts & Hex) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Unbounded:wght@600;800;900&display=swap" rel="stylesheet" />
+  <title>SUPHAWIT R. // Portfolio</title>
+  <meta name="description" content="Suphawit R. — Technical support and problem-solving portfolio" />
 
   <!-- ==========================================================================
        1. EDITABLE CONFIGURATION BLOCK (START HERE!)
        Change your name, tagline, colors, bio, skills, projects, and links below.
        ========================================================================== -->
   <script>
-    window.LAB_CONFIG = {
+    window.PORTFOLIO_CONFIG = {
       // Identity
       name: "SUPHAWIT R.",
-      role: "DATA SUPPORT SPECIALIST // HDD & STORAGE SYSTEMS",
-      tagline: "RESCUING CRITICAL BYTES FROM THE BRINK OF MAGNETIC OBLIVION.",
-      location: "BANGKOK, TH [13.7563° N, 100.5018° E]",
+      tagline: "MANUFATURING SPECIALIST I",
+      location: "Bangkok, Thailand",
       timezone: "Asia/Bangkok",
-      serialNumber: "SN-DRL-8804-X9",
-      firmware: "FW: REV.4.09-CLEANROOM",
 
-      // Theme Colors (Choose Neon Green '#00FF66' or Warning Orange '#FF5500' as primary)
       colors: {
-        bgDark: "#070809",
-        bgPanel: "#0E1013",
-        accentPrimary: "#00FF66",   // Phosphor Neon Green
-        accentWarning: "#FF5500",   // Cleanroom Warning Orange
-        offWhite: "#EAEAEA",        // Secondary Off-White
-        muted: "#6E7681"
+        bgDark: "#F7F8FA",
+        bgPanel: "#FFFFFF",
+        accentPrimary: "#315EFB",
+        accentWarning: "#E49B35",
+        offWhite: "#172033",
+        muted: "#667085"
       },
 
       // Section 3: About & Storage Capacity Skills
       about: {
-        heading: "CLEANROOM PRECISION. SECTOR-LEVEL OBSESSION.",
-        bio: "I am a Data Support Specialist working directly with high-density hard drives, storage arrays, and low-level diagnostic telemetry. Whether isolating bad sectors, interpreting S.M.A.R.T. failure signatures, automating drive health pipelines, or guiding mission-critical recovery workflows, I bridge raw hardware physics with bulletproof human support.",
+        heading: "TECHNICAL SUPPORT, BUILT AROUND PEOPLE.",
+        bio: "I am a Data Support Specialist who enjoys turning complicated technical issues into clear, practical solutions. My experience spans data recovery, storage systems, incident triage, and workflow automation—with a focus on reliable outcomes and thoughtful customer support.",
         stats: [
           { label: "SECTORS VERIFIED", value: "4.8B+" },
           { label: "RECOVERY INTEGRITY", value: "99.94%" },
@@ -47,148 +38,70 @@
           { label: "RESPONSE LATENCY", value: "< 4.2ms" }
         ],
         skills: [
-          {
-            driveLetter: "VOL_01 // C:",
-            name: "HDD Diagnostics & S.M.A.R.T. Telemetry",
-            percent: 96,
-            status: "96% — ALMOST FULL [OPTIMAL]",
-            filesystem: "RAW_LBA_64",
-            detail: "Deep analysis of reallocated sectors, read error rates, spin-up anomalies, and firmware logs."
-          },
-          {
-            driveLetter: "VOL_02 // D:",
-            name: "Technical Support & Incident Triage",
-            percent: 95,
-            status: "95% — ALMOST FULL [HIGH PRIORITY]",
-            filesystem: "EXT4_JOURNAL",
-            detail: "Translating complex storage failures into calm, actionable recovery steps for enterprise & end users."
-          },
-          {
-            driveLetter: "VOL_03 // E:",
-            name: "Data Recovery & Partition Reconstruction",
-            percent: 91,
-            status: "91% — HEAVY ALLOCATION",
-            filesystem: "NTFS_MFT_MIRROR",
-            detail: "Bit-for-bit disk imaging, non-destructive bad-head bypassing, and corrupted file table repair."
-          },
-          {
-            driveLetter: "VOL_04 // F:",
-            name: "Automation Scripting (Python / Bash / SQL)",
-            percent: 84,
-            status: "84% — ACTIVE WRITE CACHE",
-            filesystem: "ZFS_RAIDZ2",
-            detail: "Building automated log parsers, RMA verification dashboards, and batch drive stress-testing tools."
-          },
-          {
-            driveLetter: "VOL_05 // G:",
-            name: "Storage Architecture (RAID / NAS / SAN)",
-            percent: 88,
-            status: "88% — PARITY VERIFIED",
-            filesystem: "BTRFS_SCRUB",
-            detail: "Multi-bay parity reconstruction, degraded array recovery, and enterprise cold-storage workflows."
-          }
+          { name: "HDD Diagnostics & S.M.A.R.T. Telemetry", percent: 96, detail: "Analyzing drive health, error rates, and diagnostic logs." },
+          { name: "Technical Support & Incident Triage", percent: 95, detail: "Turning complex issues into calm, actionable recovery steps." },
+          { name: "Data Recovery & File Systems", percent: 91, detail: "Disk imaging, partition recovery, and file-system repair." },
+          { name: "Workflow Automation", percent: 84, detail: "Building tools and dashboards with Python, Bash, and SQL." },
+          { name: "Storage Systems & RAID", percent: 88, detail: "Supporting NAS, SAN, and multi-drive storage environments." }
         ]
       },
 
       // Section 4: Works ("Recovered Files") — 3 to 6 Projects
       projects: [
         {
-          id: "FILE_001.RAW",
-          sector: "0x004F8A10",
-          integrity: "100% RECOVERED",
-          size: "42.8 MB",
           title: "S.M.A.R.T. Sentinel Telemetry Engine",
           oneLiner: "Automated drive health analyzer that predicts mechanical head degradation 72 hours before failure.",
           description: "Designed and deployed an automated diagnostic suite for support engineers to parse raw hexadecimal S.M.A.R.T. attributes across thousands of drive logs. Flags subtle increases in Seek Error Rate (0x07) and Current Pending Sector Count (0xC5) with visual heatmaps.",
           tags: ["Python", "S.M.A.R.T. Telemetry", "Predictive Triage", "Log Parsing"],
           metrics: ["Reduced RMA triage time by 64%", "Zero false negatives across 12,000+ drive logs", "Exports clean customer-ready PDF health reports"],
           link: "https://github.com",
-          linkText: "INSPECT REPOSITORY // GITHUB",
-          hexPreview: "4D 5A 90 00 03 00 00 00 04 00 00 00 FF FF 00 00 B8 00 00 00 00 00 00 00 40 00 00 00"
+          linkText: "View on GitHub"
         },
         {
-          id: "FILE_002.IMG",
-          sector: "0x009C2B40",
-          integrity: "99.9% RECOVERED",
-          size: "128.4 GB",
           title: "Bad-Sector Adaptive Cloning Workflow",
           oneLiner: "Multi-pass non-destructive disk imaging protocol for drives suffering from weak read/write heads.",
           description: "Created a standardized multi-stage cloning workflow that dynamically skips damaged LBA zones on first pass to secure 95%+ of healthy platters immediately, before performing reverse-seek micro-reads on degraded sectors.",
           tags: ["Disk Imaging", "LBA Mapping", "Linux ddrescue", "SOP Architecture"],
           metrics: ["Increased successful byte extraction by 38%", "Prevented platter scoring on degraded drives", "Adopted as standard lab triage procedure"],
           link: "https://github.com",
-          linkText: "VIEW PROTOCOL SPEC",
-          hexPreview: "EB 52 90 4E 54 46 53 20 20 20 20 00 02 08 00 00 00 00 00 00 00 F8 00 00 3F 00 FF 00"
+          linkText: "View project"
         },
         {
-          id: "FILE_003.BIN",
-          sector: "0x012E77C0",
-          integrity: "100% RECOVERED",
-          size: "18.2 MB",
           title: "RAID-5 Parity Reconstruction Simulator",
           oneLiner: "Interactive training & support tool for visualizing XOR parity recovery across multi-disk arrays.",
           description: "Built an interactive utility that helps support specialists and clients understand striped parity reconstruction when a multi-bay NAS experiences simultaneous drive dropouts and stale superblocks.",
           tags: ["RAID Forensics", "XOR Parity", "JavaScript", "Support Tooling"],
           metrics: ["Cut escalations on NAS tickets by 45%", "Simulates 3-to-12 bay configurations in real time", "Includes byte-offset stripe calculator"],
           link: "https://github.com",
-          linkText: "LAUNCH LIVE TOOL",
-          hexPreview: "52 41 49 44 5F 56 45 52 5F 30 35 00 A9 F1 2C 88 00 1F 44 90 7B CC 10 02 99 E0 41 11"
+          linkText: "Launch tool"
         },
         {
-          id: "FILE_004.DAT",
-          sector: "0x018A00F0",
-          integrity: "99.8% RECOVERED",
-          size: "6.4 MB",
           title: "Acoustic & Vibration Fault Classifier",
           oneLiner: "Spectral reference guide matching HDD click/spin acoustic patterns to exact mechanical failure modes.",
           description: "Compiled a diagnostic reference matrix correlating spindle motor whine, actuator sweep clicking, and parked-head stiction signatures with rapid support triage actions—preventing users from powering on critically damaged drives.",
           tags: ["Hardware Forensics", "Acoustic Triage", "Customer Escalation", "Knowledge Base"],
           metrics: ["18 distinct mechanical fault profiles cataloged", "Used daily by Tier-1 & Tier-2 support desks", "Saved hundreds of drives from fatal power-cycling"],
           link: "https://github.com",
-          linkText: "OPEN AUDIO MATRIX",
-          hexPreview: "52 49 46 46 24 80 04 00 57 41 56 45 66 6D 74 20 10 00 00 00 01 00 02 00 44 AC 00 00"
+          linkText: "View project"
         },
         {
-          id: "FILE_005.SYS",
-          sector: "0x021F9900",
-          integrity: "100% RECOVERED",
-          size: "310.0 MB",
           title: "Partition Table & MFT Healer CLI",
           oneLiner: "Command-line assistant for locating backup GPT headers and orphaned NTFS Master File Table records.",
           description: "A streamlined diagnostic wrapper that scans raw volume offsets for backup boot sectors and reconstructs corrupted partition boundaries after accidental formatting or power-loss write interrupts.",
           tags: ["GPT / MBR", "File Systems", "Bash / Python", "Hex Recovery"],
           metrics: ["Restores volume mountability in under 90 seconds", "Read-only forensic safety lock built in", "Supports NTFS, exFAT, and EXT4 signatures"],
           link: "https://github.com",
-          linkText: "INSPECT SOURCE CODE",
-          hexPreview: "45 46 49 20 50 41 52 54 00 00 01 00 5C 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00"
+          linkText: "View source"
         },
         {
-          id: "FILE_006.LOG",
-          sector: "0x02B411E0",
-          integrity: "100% RECOVERED",
-          size: "14.9 MB",
           title: "Zero-Friction RMA & Diagnostic Portal",
           oneLiner: "Self-service support workflow turning cryptic error codes into plain-human recovery steps.",
           description: "Redesigned the customer diagnostic intake pipeline so distressed users facing data loss receive immediate safety warnings, warranty verification, and step-by-step backup isolation before shipping hardware.",
           tags: ["Support UX", "Workflow Automation", "Data Integrity", "SLA Optimization"],
           metrics: ["98.4% customer satisfaction (CSAT) score", "Cut average ticket resolution time by 51%", "Eliminated incomplete diagnostic submissions"],
           link: "https://github.com",
-          linkText: "READ CASE STUDY",
-          hexPreview: "7B 22 73 74 61 74 75 73 22 3A 22 4F 4B 22 2C 22 63 72 63 33 32 22 3A 22 30 78 39 41"
+          linkText: "Read case study"
         }
-      ],
-
-      // Section 5: Marquee Ticker Items
-      marqueeItems: [
-        "DATA INTEGRITY",
-        "ZERO DATA LOSS",
-        "SECTOR-BY-SECTOR VERIFICATION",
-        "CLEANROOM PROTOCOL",
-        "S.M.A.R.T. TELEMETRY",
-        "MAGNETIC FLUX REVERSAL",
-        "ACTUATOR PRECISION",
-        "RAID PARITY RECONSTRUCTION",
-        "NON-DESTRUCTIVE IMAGING"
       ],
 
       // Section 6: Contact Links
@@ -208,38 +121,21 @@
        2. CSS VARIABLES & RESET
        ========================================================================== */
     :root {
-      --bg-dark: #070809;
-      --bg-panel: #0E1013;
-      --bg-elevated: #14171C;
-      --accent: #00FF66;
-      --accent-dim: rgba(0, 255, 102, 0.14);
-      --accent-glow: rgba(0, 255, 102, 0.45);
-      --warning: #FF5500;
-      --warning-dim: rgba(255, 85, 0, 0.15);
-      --off-white: #EAEAEA;
-      --muted: #76808C;
-      --border: rgba(234, 234, 234, 0.13);
-      --border-accent: rgba(0, 255, 102, 0.35);
+      --bg-dark: #F7F8FA;
+      --bg-panel: #FFFFFF;
+      --bg-elevated: #FFFFFF;
+      --accent: #315EFB;
+      --accent-dim: rgba(49, 94, 251, 0.08);
+      --accent-glow: rgba(49, 94, 251, 0.18);
+      --warning: #E49B35;
+      --warning-dim: rgba(228, 155, 53, 0.12);
+      --off-white: #172033;
+      --muted: #667085;
+      --border: #E4E7EC;
+      --border-accent: rgba(49, 94, 251, 0.24);
 
-      --font-display: 'Unbounded', sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
-
-      --cursor-x: 50vw;
-      --cursor-y: 50vh;
-    }
-
-    /* Theme Color Inversion State (Triggered on Scroll / Toggle) */
-    body.theme-inverted {
-      --bg-dark: #EAEAEA;
-      --bg-panel: #DCDCDC;
-      --bg-elevated: #CFCFCF;
-      --off-white: #070809;
-      --muted: #40464E;
-      --border: rgba(7, 8, 9, 0.16);
-      --accent: #FF4400;
-      --accent-dim: rgba(255, 68, 0, 0.12);
-      --accent-glow: rgba(255, 68, 0, 0.35);
-      --border-accent: rgba(255, 68, 0, 0.45);
+      --font-display: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      --font-mono: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
     }
 
     *, *::before, *::after {
@@ -268,25 +164,14 @@
       overflow-x: hidden;
       transition: background-color 0.55s cubic-bezier(0.16, 1, 0.3, 1),
                   color 0.55s cubic-bezier(0.16, 1, 0.3, 1);
-      cursor: none; /* Custom Read/Write Head Cursor active on desktop */
-    }
-
-    @media (hover: none), (pointer: coarse) {
-      body {
-        cursor: auto;
-      }
+      cursor: auto;
     }
 
     a, button {
-      cursor: none;
+      cursor: pointer;
       color: inherit;
       text-decoration: none;
       font-family: inherit;
-    }
-    @media (hover: none), (pointer: coarse) {
-      a, button {
-        cursor: pointer;
-      }
     }
 
     /* ==========================================================================
@@ -621,21 +506,6 @@
       pointer-events: none;
     }
 
-    .hero-eyebrow {
-      max-width: 100%;
-      font-size: clamp(0.68rem, 1.1vw, 0.85rem);
-      letter-spacing: 0.24em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: rgba(7, 8, 9, 0.82);
-      border: 1px solid var(--border-accent);
-      padding: 0.35rem 0.9rem;
-      margin-bottom: 1.1rem;
-      backdrop-filter: blur(6px);
-      pointer-events: auto;
-      text-align: center;
-    }
-
     .hero-title {
       position: absolute;
       top: 12%;
@@ -754,12 +624,6 @@
         padding: 0;
       }
 
-      .hero-eyebrow {
-        font-size: 0.58rem;
-        letter-spacing: 0.1em;
-        padding: 0.35rem 0.5rem;
-      }
-
       .hero-title {
         top: 12%;
         font-size: clamp(1.8rem, 7vw, 2.7rem);
@@ -776,7 +640,7 @@
       }
 
       .hero-portrait {
-        top: 78%;
+        top: 120%;
         width: min(96vw, 30rem);
         max-height: 58vh;
       }
@@ -957,11 +821,6 @@
       padding: 1.25rem 1.4rem;
       position: relative;
       transition: border-color 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .storage-volume-card:hover {
-      border-color: var(--accent);
-      box-shadow: 0 8px 30px rgba(0, 255, 102, 0.08);
     }
 
     .volume-header {
@@ -1569,252 +1428,688 @@
         display: none !important;
       }
     }
+
+    :root {
+      color-scheme: light;
+    }
+
+    html {
+      background: var(--bg-dark);
+    }
+
+    body {
+      color: var(--off-white);
+      background: var(--bg-dark);
+      font-family: var(--font-mono);
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .chromatic-glitch:hover {
+      animation: none;
+      text-shadow: none;
+    }
+
+    .hud-header {
+      padding: 1.1rem clamp(1.25rem, 5vw, 5rem);
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      letter-spacing: 0;
+    }
+
+    .hud-brand {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .hud-nav-links {
+      gap: clamp(1rem, 2.5vw, 2.25rem);
+    }
+
+    .hud-nav-links a {
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-transform: none;
+    }
+
+    .hud-nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .hero-section {
+      min-height: 100svh;
+      height: auto;
+      padding: 4.5rem 1.25rem 1rem;
+      display: grid;
+      grid-template-rows: auto auto auto;
+      justify-items: center;
+      align-content: center;
+      gap: 0.25rem;
+      overflow: hidden;
+      background: var(--bg-dark);
+    }
+
+    .hero-copy-content {
+      position: static;
+      grid-row: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .hero-title {
+      position: static;
+      width: auto;
+      max-width: 100%;
+      transform: none;
+      color: var(--off-white);
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 7rem);
+      line-height: 1;
+      letter-spacing: -0.065em;
+      text-align: center;
+      text-shadow: none;
+      opacity: 1;
+    }
+
+    .hero-portrait-wrap {
+      grid-row: 2;
+      min-height: 0;
+      height: auto;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .hero-portrait {
+      position: static;
+      width: min(110vw, 50rem);
+      max-height: min(68vh, 40rem);
+      object-fit: contain;
+      object-position: center bottom;
+      opacity: 1;
+      transform: translateY(-1.25rem);
+      filter: drop-shadow(0 18px 24px rgba(16, 24, 40, 0.12));
+    }
+
+    .hero-tagline {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 0;
+      color: var(--muted);
+      background: transparent;
+      border: 0;
+      backdrop-filter: none;
+      font-size: clamp(1rem, 1.5vw, 1.15rem);
+      text-align: center;
+    }
+
+    .hero-cta-row {
+      margin: 0.75rem 0 0;
+      gap: 0.75rem;
+    }
+
+    .hero-bottom {
+      grid-row: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .magnetic-btn {
+      min-height: 2.9rem;
+      padding: 0.8rem 1.25rem;
+      border-radius: 0.55rem;
+      font-family: var(--font-mono);
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-transform: none;
+      box-shadow: none;
+      transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+      will-change: auto;
+    }
+
+    .magnetic-btn-primary {
+      color: #fff;
+      background: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    .magnetic-btn-primary:hover {
+      color: #fff;
+      background: #244bd2;
+      border-color: #244bd2;
+      box-shadow: 0 6px 16px rgba(49, 94, 251, 0.18);
+      transform: translateY(-1px);
+    }
+
+    .magnetic-btn-secondary {
+      color: var(--off-white);
+      background: #fff;
+      border: 1px solid var(--border);
+    }
+
+    .magnetic-btn-secondary:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: #fff;
+      transform: translateY(-1px);
+    }
+
+    .about-sheet,
+    .works-section,
+    .contact-section {
+      z-index: 1;
+      margin: 0;
+      min-height: 0;
+      padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 8vw, 8rem);
+      color: var(--off-white);
+      background: #fff;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      transition: none;
+    }
+
+    .about-sheet {
+      border-top: 1px solid var(--border);
+    }
+
+    .works-section {
+      background: var(--bg-dark);
+    }
+
+    .contact-section {
+      min-height: auto;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-meta-bar {
+      margin-bottom: 2rem;
+      padding-bottom: 0.75rem;
+      border-color: var(--border);
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+      text-transform: none;
+    }
+
+    .section-meta-bar span.tag-index {
+      color: var(--accent);
+      letter-spacing: 0.08em;
+    }
+
+    .about-heading,
+    .works-title,
+    .modal-project-title {
+      color: var(--off-white);
+      font-family: var(--font-display);
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      line-height: 1.08;
+      text-transform: none;
+    }
+
+    .about-heading {
+      max-width: 15ch;
+    }
+
+    .about-bio,
+    .works-subtitle,
+    .file-card-desc,
+    .modal-project-desc {
+      color: var(--muted);
+    }
+
+    .stat-card,
+    .storage-volume-card,
+    .file-card,
+    .clock-terminal,
+    .contact-port-card {
+      color: var(--off-white);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 16px rgba(16, 24, 40, 0.035);
+    }
+
+    .stat-card {
+      border-left: 1px solid var(--border);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .stat-card:hover,
+    .contact-port-card:hover,
+    .file-card:hover,
+    .storage-volume-card:hover {
+      border-color: rgba(49, 94, 251, 0.35);
+      box-shadow: 0 12px 28px rgba(16, 24, 40, 0.08);
+    }
+
+    .stat-value,
+    .volume-title,
+    .file-card-title,
+    .port-name,
+    .clock-time,
+    .modal-meta-item strong {
+      color: var(--off-white);
+    }
+
+    .stat-label,
+    .volume-status,
+    .clock-label,
+    .clock-sub,
+    .file-sector-badge {
+      color: var(--muted);
+    }
+
+    .skills-heading {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 650;
+    }
+
+    .storage-bay-list {
+      gap: 0.85rem;
+    }
+
+    .storage-volume-card {
+      padding: 1rem 1.1rem;
+    }
+
+    .volume-header {
+      margin-bottom: 0.6rem;
+    }
+
+    .volume-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .skill-percent {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .volume-bar-outer {
+      height: 0.4rem;
+      margin: 0 0 0.65rem;
+      padding: 0;
+      overflow: hidden;
+      background: #eef0f4;
+      border: 0;
+      border-radius: 999px;
+    }
+
+    .volume-bar-inner,
+    .storage-volume-card[data-high="true"] .volume-bar-inner {
+      background: var(--accent);
+      border-radius: inherit;
+    }
+
+    .volume-footer {
+      font-size: 0.84rem;
+      line-height: 1.5;
+    }
+
+    .works-header {
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .works-title {
+      font-size: clamp(2rem, 5vw, 3.75rem);
+    }
+
+    .works-subtitle {
+      font-size: 0.98rem;
+    }
+
+    .recovered-grid {
+      gap: 1.25rem;
+    }
+
+    .file-card {
+      min-height: 300px;
+      padding: 1.5rem;
+      opacity: 1;
+      transform: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .file-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .file-card-top {
+      border-color: var(--border);
+      color: var(--muted);
+    }
+
+    .file-id-badge,
+    .file-card-footer,
+    .port-handle {
+      color: var(--accent);
+    }
+
+    .file-card-title {
+      font-size: 1.25rem;
+      font-weight: 650;
+    }
+
+    .file-tags {
+      gap: 0.5rem;
+    }
+
+    .file-tag {
+      padding: 0.3rem 0.65rem;
+      color: #475467;
+      background: #f2f4f7;
+      border: 0;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .file-card-footer {
+      color: var(--muted);
+      border-color: var(--border);
+      font-size: 0.78rem;
+      letter-spacing: 0;
+      font-weight: 500;
+    }
+
+    .file-modal-backdrop {
+      background: rgba(16, 24, 40, 0.35);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+
+    .file-modal-window {
+      color: var(--off-white);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      box-shadow: 0 24px 64px rgba(16, 24, 40, 0.18);
+    }
+
+    .modal-titlebar {
+      color: var(--off-white);
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    .modal-close-btn {
+      color: var(--off-white);
+      background: #f2f4f7;
+      border-radius: 0.4rem;
+      font-size: 0.85rem;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .modal-meta-grid {
+      background: #f7f8fa;
+      border: 1px solid var(--border);
+      border-radius: 0.65rem;
+    }
+
+    .modal-project-desc {
+      color: #475467;
+    }
+
+    .modal-metrics-list li {
+      color: var(--off-white);
+      background: #f7f8fa;
+      border-left: 2px solid var(--accent);
+      border-radius: 0 0.4rem 0.4rem 0;
+    }
+
+    .contact-giant-cta {
+      color: var(--off-white);
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 9vw, 7rem);
+      letter-spacing: -0.07em;
+      text-transform: none;
+    }
+
+    .contact-grid {
+      align-items: stretch;
+    }
+
+    .clock-terminal {
+      padding: 1.5rem;
+    }
+
+    .clock-label {
+      font-size: 0.9rem;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .clock-time {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 650;
+    }
+
+    .contact-links-grid {
+      gap: 0.75rem;
+    }
+
+    .contact-port-card {
+      min-height: 6rem;
+      padding: 1rem 1.1rem;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .contact-port-card:hover {
+      background: #fff;
+      transform: translateY(-2px);
+    }
+
+    .port-type {
+      color: var(--muted);
+      font-size: 0.85rem;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .port-name {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .port-handle {
+      font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+      border-color: var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 680px) {
+      .hero-section {
+        min-height: 100svh;
+        padding: 4.5rem 1.25rem 1rem;
+        grid-template-rows: auto auto auto;
+      }
+
+      .hero-title {
+        font-size: clamp(2.5rem, 11vw, 4.2rem);
+      }
+
+      .hero-portrait {
+        width: min(100vw, 34rem);
+        max-height: min(62vh, 32rem);
+      }
+
+      .hero-cta-row {
+        flex-wrap: nowrap;
+      }
+
+      .hero-cta-row .magnetic-btn {
+        padding: 0.75rem 0.9rem;
+        font-size: 0.84rem;
+      }
+
+      .about-stat-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .contact-section,
+      .about-sheet,
+      .works-section {
+        padding: 3.5rem 1.25rem;
+      }
+
+      .contact-links-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 380px) {
+      .hero-cta-row {
+        flex-wrap: wrap;
+      }
+
+      .contact-links-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Atmospheric Overlays -->
-  <div class="crt-scanlines" aria-hidden="true"></div>
-  <div class="film-grain" aria-hidden="true"></div>
-  <div class="glitch-transition-overlay" id="glitch-overlay" aria-hidden="true"></div>
-
-  <!-- Custom Cursor: Hard Drive Read/Write Head -->
-  <div class="rw-cursor" id="rw-cursor" aria-hidden="true">
-    <svg class="rw-cursor-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Outer Target Gimbal -->
-      <circle cx="32" cy="32" r="22" stroke="var(--accent)" stroke-width="1" stroke-dasharray="6 4" opacity="0.75" />
-      <!-- Read/Write Slider Fork -->
-      <path d="M32 4 L36 16 L28 16 Z" fill="var(--warning)" />
-      <path d="M12 32 L22 32 M42 32 L52 32 M32 12 L32 22 M32 42 L32 52" stroke="var(--accent)" stroke-width="1.4" />
-      <!-- Micro Magnetic Core -->
-      <rect x="29" y="29" width="6" height="6" stroke="var(--warning)" stroke-width="1.5" />
-    </svg>
-    <div class="rw-cursor-label" id="rw-cursor-label">TRK:000 // SEC:00</div>
-  </div>
-
-  <!-- ==========================================================================
-       HUD TOP NAVIGATION BAR
-       ========================================================================== -->
   <header class="hud-header">
-    <a href="#hero" class="hud-brand chromatic-glitch">
-      <span class="led-dot"></span>
-      <span id="hud-name">DATA RECOVERY LAB</span>
+    <a href="#hero" class="hud-brand">
+      <span id="hud-name">SUPHAWIT R.</span>
     </a>
 
     <nav class="hud-nav" aria-label="Primary Navigation">
       <div class="hud-nav-links">
-        <a href="#hero" class="chromatic-glitch">[01. PLATTER]</a>
-        <a href="#about" class="chromatic-glitch">[02. DIAGNOSTICS]</a>
-        <a href="#works" class="chromatic-glitch">[03. RECOVERED_FILES]</a>
-        <a href="#contact" class="chromatic-glitch">[04. EJECT_PORT]</a>
-      </div>
-
-      <div class="hud-controls">
-        <!-- Optional HDD Click/Spin Sound Toggle (Muted by Default) -->
-        <button type="button" class="hud-btn" id="audio-toggle-btn" aria-pressed="false" title="Toggle synthesized HDD acoustic telemetry">
-          <span class="sound-bars" aria-hidden="true">
-            <span></span><span></span><span></span>
-          </span>
-          <span id="audio-toggle-label">HDD AUDIO: MUTED</span>
-        </button>
-
-        <!-- High-Contrast Cleanroom Polarity Toggle -->
-        <button type="button" class="hud-btn" id="polarity-toggle-btn" title="Invert cleanroom color polarity">
-          <span>POLARITY</span>
-        </button>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#works">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <!-- ========================================================================
-         SECTION 2: HERO (SPINNING PLATTER + ACTUATOR ARM + GIANT TYPE)
-         ======================================================================== -->
     <section class="hero-section" id="hero">
-      <!-- Corner Diagnostic Telemetry Readouts -->
-      <div class="hero-telemetry-corners" aria-hidden="true">
-        <div class="telemetry-row">
-          <div class="telemetry-box">
-            <div>SPINDLE VELOCITY: <strong>7,200 RPM [LOCKED]</strong></div>
-            <div id="hero-serial-readout">SERIAL: SN-DRL-8804-X9</div>
-          </div>
-          <div class="telemetry-box" style="text-align: right;">
-            <div>ACTUATOR SERVO: <strong id="servo-angle-readout">TRACKING MOUSE</strong></div>
-            <div id="hero-firmware-readout">FW: REV.4.09-CLEANROOM</div>
-          </div>
-        </div>
-        <div class="telemetry-row">
-          <div class="telemetry-box">
-            <div>HEAD FLY HEIGHT: <strong>3.2 NANOMETERS</strong></div>
-            <div>FLUX DENSITY: <strong>1.42 Tb/in²</strong></div>
-          </div>
-          <div class="telemetry-box" style="text-align: right;">
-            <div>ACTIVE CYLINDER: <strong id="cylinder-readout">CYL_00412</strong></div>
-            <div>SCROLL TO MOUNT DIAGNOSTIC SHEET &darr;</div>
-          </div>
-        </div>
+      <div class="hero-copy-content">
+        <h1 class="hero-title" id="hero-name">SUPHAWIT R.</h1>
       </div>
-
-      <!-- Spinning Hard Drive Platter Stage -->
-      <div class="hero-platter-stage" id="platter-stage">
-        <canvas id="platter-canvas" width="760" height="760" aria-label="Interactive spinning hard drive platter with concentric data tracks"></canvas>
-
-        <!-- Moving Voice-Coil Actuator Arm SVG -->
-        <svg class="actuator-assembly" viewBox="0 0 760 760" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g id="actuator-arm-group" style="transform-origin: 650px 620px; transition: transform 0.08s ease-out;">
-            <!-- Actuator Pivot Bearing Housing -->
-            <circle cx="650" cy="620" r="54" fill="#101318" stroke="var(--accent)" stroke-width="2" />
-            <circle cx="650" cy="620" r="24" fill="#070809" stroke="var(--warning)" stroke-width="2" />
-            <!-- Voice Coil Triangular Arm -->
-            <path d="M618 595 L382 372 L396 355 L645 570 Z" fill="rgba(16, 19, 24, 0.92)" stroke="var(--off-white)" stroke-width="1.6" />
-            <!-- Weight Reduction Cutouts -->
-            <circle cx="555" cy="520" r="14" fill="#070809" stroke="var(--accent)" stroke-width="1" />
-            <circle cx="505" cy="472" r="11" fill="#070809" stroke="var(--accent)" stroke-width="1" />
-            <circle cx="460" cy="430" r="8" fill="#070809" stroke="var(--accent)" stroke-width="1" />
-            <!-- Read/Write Gimbal Tip & Laser Point -->
-            <rect x="366" y="352" width="22" height="14" rx="2" transform="rotate(-42 366 352)" fill="var(--warning)" />
-            <circle cx="372" cy="356" r="5" fill="var(--accent)" />
-            <circle cx="372" cy="356" r="14" stroke="var(--accent)" stroke-width="1" stroke-dasharray="3 3" />
-          </g>
-        </svg>
-
-        <!-- Giant Layered Name & Scramble Text -->
-        <div class="hero-overlay-copy">
-          <h1 class="hero-title chromatic-glitch" id="hero-name" data-scramble="true">SUPHAWIT R.</h1>
-          <div class="hero-copy-content">
-            <div class="hero-eyebrow" id="hero-role">DATA SUPPORT SPECIALIST // HDD & STORAGE SYSTEMS</div>
-            <p class="hero-tagline" id="hero-tagline">
-              RESCUING CRITICAL BYTES FROM THE BRINK OF MAGNETIC OBLIVION.
-            </p>
-            <div class="hero-cta-row">
-              <a href="#works" class="magnetic-btn magnetic-btn-primary">
-                <span>INSPECT RECOVERED FILES</span>
-                <span>&rarr;</span>
-              </a>
-              <a href="#contact" class="magnetic-btn magnetic-btn-secondary">
-                <span>INITIATE HANDSHAKE</span>
-              </a>
-            </div>
-          </div>
-          <img class="hero-portrait" src="1000065932-removebg-preview.png" alt="Portrait of Suphawit R." />
+      <div class="hero-portrait-wrap">
+        <img class="hero-portrait" src="1000065932-removebg-preview.png" alt="Portrait of Suphawit R." />
+      </div>
+      <div class="hero-bottom">
+        <p class="hero-tagline" id="hero-tagline">
+          I help people and teams solve complex technical problems with clarity and care.
+        </p>
+        <div class="hero-cta-row">
+          <a href="#works" class="magnetic-btn magnetic-btn-primary">View my work</a>
+          <a href="#contact" class="magnetic-btn magnetic-btn-secondary">Get in touch</a>
         </div>
       </div>
     </section>
 
-    <!-- ========================================================================
-         SECTION 3: ABOUT (SLIDES UP OVER HERO LIKE A SHEET)
-         ======================================================================== -->
     <section class="about-sheet" id="about" data-invert-trigger="false">
-      <div class="sheet-handle" aria-hidden="true"></div>
-
       <div class="section-meta-bar">
-        <span class="tag-index">// SECTION 02 : SYSTEM DIAGNOSTICS & OPERATOR BIO</span>
-        <span id="about-location-readout">LOC: BANGKOK, TH</span>
+        <span class="tag-index">01</span>
+        <span id="about-location-readout">Bangkok, Thailand</span>
       </div>
 
       <div class="about-layout">
         <!-- Left Column: Bio + Key Cleanroom Metrics -->
         <div>
-          <h2 class="about-heading chromatic-glitch" id="about-heading">
-            CLEANROOM PRECISION. SECTOR-LEVEL OBSESSION.
+          <h2 class="about-heading" id="about-heading">
+            TECHNICAL SUPPORT, BUILT AROUND PEOPLE.
           </h2>
           <p class="about-bio" id="about-bio"></p>
 
           <div class="about-stat-grid" id="about-stats-grid">
-            <!-- Populated from LAB_CONFIG -->
+            <!-- Populated from portfolio data -->
           </div>
         </div>
 
-        <!-- Right Column: Storage Capacity Bars -->
         <div>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-size: 0.78rem; color: var(--muted);">
-            <span>MOUNTED SKILL PARTITIONS (5 VOLUMES)</span>
-            <span style="color: var(--accent);">STATUS: HEALTHY</span>
+          <div class="skills-heading">
+            <span>Skills &amp; expertise</span>
           </div>
           <div class="storage-bay-list" id="skills-bay-list">
-            <!-- Populated from LAB_CONFIG -->
+            <!-- Populated from portfolio data -->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========================================================================
-         SECTION 5A: MARQUEE TICKER
-         ======================================================================== -->
-    <div class="marquee-strip" aria-hidden="true">
-      <div class="marquee-track" id="marquee-track-1"></div>
-    </div>
-
-    <!-- ========================================================================
-         SECTION 4: WORKS ("RECOVERED FILES" WITH CORRUPTED BLOCK ASSEMBLY)
-         ======================================================================== -->
     <section class="works-section" id="works">
       <div class="section-meta-bar">
-        <span class="tag-index">// SECTION 03 : RECOVERED FILE ARCHIVE</span>
-        <span>CLICK ANY SECTOR RECORD FOR FULL HEX INSPECTION</span>
+        <span class="tag-index">02</span>
+        <span>Selected projects and case studies</span>
       </div>
 
       <div class="works-header">
-        <h2 class="works-title chromatic-glitch">RECOVERED FILES</h2>
+        <h2 class="works-title">Selected projects</h2>
         <p class="works-subtitle">
-          Each archive below reconstructs itself from fragmented sectors as you scan down the platter. Select any file to mount its full technical dossier.
+          A selection of tools, workflows, and support projects I have worked on.
         </p>
       </div>
 
       <div class="recovered-grid" id="projects-grid">
-        <!-- Populated from LAB_CONFIG.projects -->
+        <!-- Populated from portfolio data -->
       </div>
     </section>
 
-    <!-- ========================================================================
-         SECTION 5B: SECOND MARQUEE TICKER (WARNING ORANGE)
-         ======================================================================== -->
-    <div class="marquee-strip" style="background: var(--warning);" aria-hidden="true">
-      <div class="marquee-track" id="marquee-track-2" style="animation-direction: reverse;"></div>
-    </div>
-
-    <!-- ========================================================================
-         SECTION 6: CONTACT ("SAFE TO REMOVE HARDWARE" + ASIA/BANGKOK LIVE TIME)
-         ======================================================================== -->
     <section class="contact-section" id="contact">
       <div>
         <div class="section-meta-bar">
-          <span class="tag-index">// SECTION 04 : EXTERNAL BUS & SAFE EJECTION</span>
-          <span>WRITE CACHE FLUSHED • READY FOR TRANSMISSION</span>
-        </div>
-
-        <div class="safe-eject-banner">
-          <span class="led-dot"></span>
-          <span>SYSTEM MESSAGE: SAFE TO REMOVE HARDWARE — OR START A CONVERSATION</span>
+          <span class="tag-index">03</span>
+          <span>Open to new opportunities</span>
         </div>
 
         <div>
-          <a href="mailto:your.email@example.com" id="giant-lets-talk" class="contact-giant-cta chromatic-glitch">
-            LET'S TALK_
+          <a href="mailto:your.email@example.com" id="giant-lets-talk" class="contact-giant-cta">
+            Let&rsquo;s talk
           </a>
         </div>
       </div>
 
       <div class="contact-grid">
-        <!-- Live Local Time (Asia/Bangkok) -->
         <div class="clock-terminal">
-          <div class="clock-label">OPERATOR LOCAL TIME // ASIA/BANGKOK (UTC+7)</div>
+          <div class="clock-label">Based in Bangkok, Thailand</div>
           <div class="clock-time" id="bangkok-clock">--:--:-- --</div>
-          <div class="clock-sub" id="bangkok-date">SYNCHRONIZING REAL-TIME CLOCK...</div>
+          <div class="clock-sub" id="bangkok-date"></div>
         </div>
 
-        <!-- Links: EMAIL / LINKEDIN / GITHUB / LINE -->
         <div class="contact-links-grid" id="contact-links-grid">
-          <!-- Populated from LAB_CONFIG.contact -->
+          <!-- Populated from portfolio data -->
         </div>
       </div>
 
       <footer class="footer-bottom">
         <div>
-          &copy; <span id="footer-year">2026</span> <span id="footer-name">SUPHAWIT R.</span> // ALL SECTORS VERIFIED.
+          &copy; <span id="footer-year">2026</span> <span id="footer-name">SUPHAWIT R.</span>
         </div>
         <div>
-          BUILT IN CLEANROOM ENVIRONMENT • ZERO EXTERNAL FRAMEWORKS REQUIRED
+          Thanks for visiting.
         </div>
       </footer>
     </section>
@@ -1826,26 +2121,26 @@
   <div class="file-modal-backdrop" id="file-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="file-modal-window">
       <div class="modal-titlebar">
-        <span id="modal-file-id">INSPECTING: FILE_001.RAW</span>
-        <button type="button" class="modal-close-btn" id="modal-close-btn">[ESC] UNMOUNT FILE &times;</button>
+        <span id="modal-file-id">PROJECT DETAILS</span>
+        <button type="button" class="modal-close-btn" id="modal-close-btn">Close &times;</button>
       </div>
       <div class="modal-body">
         <div class="modal-meta-grid">
           <div class="modal-meta-item">
-            <span>LBA SECTOR ADDRESS</span>
-            <strong id="modal-sector">0x004F8A10</strong>
+            <span>PROJECT</span>
+            <strong id="modal-sector">Project 01</strong>
           </div>
           <div class="modal-meta-item">
-            <span>DATA INTEGRITY</span>
-            <strong id="modal-integrity">100% RECOVERED</strong>
+            <span>OUTCOME</span>
+            <strong id="modal-integrity">Project outcome</strong>
           </div>
           <div class="modal-meta-item">
-            <span>ALLOCATED SIZE</span>
+            <span>FOCUS AREAS</span>
             <strong id="modal-size">42.8 MB</strong>
           </div>
           <div class="modal-meta-item">
-            <span>CRC32 STATUS</span>
-            <strong>VERIFIED_CLEAN</strong>
+            <span>FORMAT</span>
+            <strong>Case study</strong>
           </div>
         </div>
 
@@ -1853,11 +2148,9 @@
         <p class="modal-project-desc" id="modal-desc"></p>
 
         <div style="font-size: 0.75rem; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.75rem;">
-          KEY RECOVERY BENCHMARKS & IMPACT:
+          PROJECT HIGHLIGHTS:
         </div>
         <ul class="modal-metrics-list" id="modal-metrics"></ul>
-
-        <div class="file-hex-ribbon" id="modal-hex" style="margin-bottom: 1.75rem;"></div>
 
         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
           <a href="#" target="_blank" rel="noopener noreferrer" class="magnetic-btn magnetic-btn-primary" id="modal-link">
@@ -1876,8 +2169,7 @@
     (function () {
       "use strict";
 
-      const CFG = window.LAB_CONFIG;
-      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const CFG = window.PORTFOLIO_CONFIG;
 
       /* ------------------------------------------------------------------------
          A. APPLY CONFIGURATION TO CSS & DOM
@@ -1892,14 +2184,11 @@
           if (CFG.colors.offWhite) root.style.setProperty("--off-white", CFG.colors.offWhite);
         }
 
-        document.title = `${CFG.name} // Data Recovery Lab`;
-        document.getElementById("hud-name").textContent = `${CFG.name} // LAB`;
+        document.title = `${CFG.name} // Portfolio`;
+        document.getElementById("hud-name").textContent = CFG.name;
         document.getElementById("hero-name").textContent = CFG.name;
-        document.getElementById("hero-role").textContent = CFG.role;
         document.getElementById("hero-tagline").textContent = CFG.tagline;
-        document.getElementById("hero-serial-readout").textContent = `SERIAL: ${CFG.serialNumber}`;
-        document.getElementById("hero-firmware-readout").textContent = CFG.firmware;
-        document.getElementById("about-location-readout").textContent = `LOC: ${CFG.location}`;
+        document.getElementById("about-location-readout").textContent = CFG.location.split(" [")[0];
         document.getElementById("footer-name").textContent = CFG.name;
         document.getElementById("footer-year").textContent = new Date().getFullYear();
 
@@ -1915,64 +2204,37 @@
           </div>
         `).join("");
 
-        // Storage Capacity Skill Bars
         const skillsList = document.getElementById("skills-bay-list");
         skillsList.innerHTML = CFG.about.skills.map(sk => `
-          <div class="storage-volume-card" data-percent="${sk.percent}" data-high="${sk.percent >= 92}">
+          <div class="storage-volume-card" data-percent="${sk.percent}">
             <div class="volume-header">
-              <div class="volume-title">
-                <span class="volume-drive-tag">${sk.driveLetter}</span>
-                <span>${sk.name}</span>
-              </div>
-              <div class="volume-status">${sk.status}</div>
+              <span class="volume-title">${sk.name}</span>
+              <span class="skill-percent">${sk.percent}%</span>
             </div>
             <div class="volume-bar-outer" role="progressbar" aria-valuenow="${sk.percent}" aria-valuemin="0" aria-valuemax="100">
-              <div class="volume-bar-inner" style="width: ${prefersReducedMotion ? sk.percent + '%' : '0%'};"></div>
+              <div class="volume-bar-inner" style="width: ${sk.percent}%;"></div>
             </div>
-            <div class="volume-footer">
-              <span>${sk.detail}</span>
-              <span style="white-space: nowrap;">FS: ${sk.filesystem}</span>
-            </div>
+            <p class="volume-footer">${sk.detail}</p>
           </div>
         `).join("");
 
-        // Marquee Strips
-        const marqueeHTML = [...CFG.marqueeItems, ...CFG.marqueeItems, ...CFG.marqueeItems]
-          .map(item => `<div class="marquee-item"><span>${item}</span><span class="marquee-sep"></span></div>`)
-          .join("");
-        document.getElementById("marquee-track-1").innerHTML = marqueeHTML;
-        document.getElementById("marquee-track-2").innerHTML = marqueeHTML;
-
-        // Projects ("Recovered Files")
         const projectsGrid = document.getElementById("projects-grid");
-        const shardLabels = ["BAD_LBA", "CRC_ERR", "0x7F", "REMAP", "SEEK...", "RAW_01", "SYNC", "PARITY", "0xFF", "MFT_0", "HEAD_1", "RECOV", "0x00", "LBA_OK", "LOCK", "100%"];
-
         projectsGrid.innerHTML = CFG.projects.map((proj, idx) => {
-          const shards = Array.from({ length: 16 }).map((_, sIdx) => {
-            const tx = ((sIdx % 4) - 1.5) * 45;
-            const ty = (Math.floor(sIdx / 4) - 1.5) * 45;
-            return `<div class="corrupt-shard" style="--tx:${tx}px; --ty:${ty}px; transition-delay:${(sIdx * 18)}ms;">${shardLabels[sIdx]}</div>`;
-          }).join("");
-
           return `
-            <article class="file-card" data-project-index="${idx}" tabindex="0" role="button" aria-label="Inspect recovered file ${proj.title}">
-              <div class="corrupt-shards" aria-hidden="true">${shards}</div>
+            <article class="file-card" data-project-index="${idx}" tabindex="0" role="button" aria-label="View project ${proj.title}">
               <div>
                 <div class="file-card-top">
-                  <span class="file-id-badge">&#9632; ${proj.id}</span>
-                  <span class="file-sector-badge">LBA: ${proj.sector} // ${proj.size}</span>
+                  <span class="file-id-badge">Project ${String(idx + 1).padStart(2, "0")}</span>
                 </div>
-                <h3 class="file-card-title chromatic-glitch">${proj.title}</h3>
+                <h3 class="file-card-title">${proj.title}</h3>
                 <p class="file-card-desc">${proj.oneLiner}</p>
               </div>
               <div>
-                <div class="file-hex-ribbon">HEX: ${proj.hexPreview}</div>
                 <div class="file-tags">
                   ${proj.tags.map(t => `<span class="file-tag">${t}</span>`).join("")}
                 </div>
                 <div class="file-card-footer">
-                  <span>STATUS: ${proj.integrity}</span>
-                  <span>MOUNT FILE &rarr;</span>
+                  <span>View project details &rarr;</span>
                 </div>
               </div>
             </article>
@@ -1983,18 +2245,14 @@
         document.getElementById("giant-lets-talk").href = CFG.contact.email;
         const contactGrid = document.getElementById("contact-links-grid");
         const ports = [
-          { port: "PORT_01 // SMTP", name: "EMAIL", handle: CFG.contact.emailDisplay, url: CFG.contact.email },
-          { port: "PORT_02 // NET", name: "LINKEDIN", handle: "linkedin.com/in/profile", url: CFG.contact.linkedin },
-          { port: "PORT_03 // GIT", name: "GITHUB", handle: "github.com/repository", url: CFG.contact.github },
-          { port: "PORT_04 // MSG", name: "LINE", handle: CFG.contact.lineDisplay, url: CFG.contact.line }
+          { name: "Email", handle: CFG.contact.emailDisplay, url: CFG.contact.email },
+          { name: "LinkedIn", handle: "linkedin.com/in/profile", url: CFG.contact.linkedin },
+          { name: "GitHub", handle: "github.com/repository", url: CFG.contact.github },
+          { name: "LINE", handle: CFG.contact.lineDisplay, url: CFG.contact.line }
         ];
         contactGrid.innerHTML = ports.map(p => `
-          <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="contact-port-card magnetic-btn">
-            <div class="port-type">
-              <span>${p.port}</span>
-              <span>&nearr;</span>
-            </div>
-            <div class="port-name chromatic-glitch">${p.name}</div>
+          <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="contact-port-card">
+            <div class="port-type">${p.name}<span>&nearr;</span></div>
             <div class="port-handle">${p.handle}</div>
           </a>
         `).join("");
@@ -2003,391 +2261,10 @@
       applyConfig();
 
       /* ------------------------------------------------------------------------
-         B. SYNTHESIZED WEB AUDIO HDD SOUND ENGINE (MUTED BY DEFAULT)
+         B. HERO IMAGE ENTRANCE
          ------------------------------------------------------------------------ */
-      const HddAudio = {
-        ctx: null,
-        enabled: false,
-        spindleGain: null,
-
-        init() {
-          if (this.ctx) return;
-          const AudioCtx = window.AudioContext || window.webkitAudioContext;
-          if (!AudioCtx) return;
-          this.ctx = new AudioCtx();
-
-          // Continuous subtle 120Hz (7200 RPM = 120 RPS) spindle hum
-          const osc = this.ctx.createOscillator();
-          const osc2 = this.ctx.createOscillator();
-          const filter = this.ctx.createBiquadFilter();
-          this.spindleGain = this.ctx.createGain();
-
-          osc.type = "sawtooth";
-          osc.frequency.value = 120; // 7200 RPM fundamental frequency
-          osc2.type = "sine";
-          osc2.frequency.value = 240;
-
-          filter.type = "lowpass";
-          filter.frequency.value = 280;
-
-          this.spindleGain.gain.value = 0.015;
-
-          osc.connect(filter);
-          osc2.connect(filter);
-          filter.connect(this.spindleGain);
-          this.spindleGain.connect(this.ctx.destination);
-
-          osc.start();
-          osc2.start();
-        },
-
-        toggle() {
-          if (!this.ctx) this.init();
-          if (!this.ctx) return false;
-
-          this.enabled = !this.enabled;
-          if (this.enabled) {
-            if (this.ctx.state === "suspended") this.ctx.resume();
-            this.spindleGain.gain.setTargetAtTime(0.018, this.ctx.currentTime, 0.1);
-            this.playHeadSeek(900);
-          } else {
-            this.spindleGain.gain.setTargetAtTime(0.0, this.ctx.currentTime, 0.05);
-          }
-          return this.enabled;
-        },
-
-        // Crisp mechanical actuator click sound
-        playHeadSeek(freq = 1200) {
-          if (!this.enabled || !this.ctx) return;
-          const now = this.ctx.currentTime;
-          const osc = this.ctx.createOscillator();
-          const gain = this.ctx.createGain();
-
-          osc.type = "triangle";
-          osc.frequency.setValueAtTime(freq, now);
-          osc.frequency.exponentialRampToValueAtTime(140, now + 0.022);
-
-          gain.gain.setValueAtTime(0.06, now);
-          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.025);
-
-          osc.connect(gain);
-          gain.connect(this.ctx.destination);
-          osc.start(now);
-          osc.stop(now + 0.028);
-        },
-
-        // Double seek chirp when opening modal or completing scan
-        playDataChirp() {
-          if (!this.enabled || !this.ctx) return;
-          this.playHeadSeek(1600);
-          setTimeout(() => this.playHeadSeek(2100), 45);
-        }
-      };
-
-      const audioBtn = document.getElementById("audio-toggle-btn");
-      const audioLabel = document.getElementById("audio-toggle-label");
-      audioBtn.addEventListener("click", () => {
-        const active = HddAudio.toggle();
-        audioBtn.classList.toggle("active", active);
-        audioBtn.setAttribute("aria-pressed", String(active));
-        audioLabel.textContent = active ? "HDD AUDIO: ONLINE" : "HDD AUDIO: MUTED";
-      });
-
-      // Polarity Inversion Button
-      const polarityBtn = document.getElementById("polarity-toggle-btn");
-      polarityBtn.addEventListener("click", () => {
-        document.body.classList.toggle("theme-inverted");
-        HddAudio.playDataChirp();
-      });
-
       /* ------------------------------------------------------------------------
-         C. TEXT SCRAMBLE EFFECT FOR HERO NAME
-         ------------------------------------------------------------------------ */
-      const glyphs = "0123456789ABCDEF#$%&*+<>?@[]_~";
-      function scrambleText(el, finalString, duration = 1100) {
-        if (prefersReducedMotion) {
-          el.textContent = finalString;
-          return;
-        }
-        const start = performance.now();
-        const length = finalString.length;
-
-        function tick(now) {
-          const progress = Math.min((now - start) / duration, 1);
-          const revealed = Math.floor(progress * length);
-          let out = "";
-          for (let i = 0; i < length; i++) {
-            if (finalString[i] === " ") {
-              out += " ";
-            } else if (i < revealed) {
-              out += finalString[i];
-            } else {
-              out += glyphs[Math.floor(Math.random() * glyphs.length)];
-            }
-          }
-          el.textContent = out;
-          if (progress < 1) {
-            requestAnimationFrame(tick);
-          } else {
-            el.textContent = finalString;
-          }
-        }
-        requestAnimationFrame(tick);
-      }
-
-      scrambleText(document.getElementById("hero-name"), CFG.name, 1200);
-      document.querySelector(".hero-portrait").classList.add("is-visible");
-
-      /* ------------------------------------------------------------------------
-         E. CUSTOM CURSOR + HERO ACTUATOR ARM & SPINNING PLATTER CANVAS
-         ------------------------------------------------------------------------ */
-      const cursorEl = document.getElementById("rw-cursor");
-      const cursorLabel = document.getElementById("rw-cursor-label");
-      const actuatorArm = document.getElementById("actuator-arm-group");
-      const servoReadout = document.getElementById("servo-angle-readout");
-      const cylinderReadout = document.getElementById("cylinder-readout");
-
-      let mouseX = window.innerWidth / 2;
-      let mouseY = window.innerHeight / 2;
-      let targetArmAngle = 0;
-      let currentArmAngle = 0;
-
-      window.addEventListener("mousemove", (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-
-        document.documentElement.style.setProperty("--cursor-x", `${mouseX}px`);
-        document.documentElement.style.setProperty("--cursor-y", `${mouseY}px`);
-
-        // Compute simulated Track & Sector for cursor HUD
-        const trk = Math.floor((mouseX / window.innerWidth) * 1024).toString().padStart(4, "0");
-        const sec = Math.floor((mouseY / window.innerHeight) * 64).toString().padStart(2, "0");
-        cursorLabel.textContent = `TRK:${trk} // SEC:${sec}`;
-
-        // Calculate angle for Actuator Arm across platter tracks (-18 deg to +22 deg)
-        const normDistance = Math.hypot(mouseX - window.innerWidth / 2, mouseY - window.innerHeight / 2) / (Math.min(window.innerWidth, window.innerHeight) * 0.5);
-        const clamped = Math.max(0, Math.min(1, normDistance));
-        targetArmAngle = (clamped * 32) - 14;
-
-        if (servoReadout) servoReadout.textContent = `${targetArmAngle.toFixed(1)}° RADIAL`;
-        if (cylinderReadout) cylinderReadout.textContent = `CYL_${trk}`;
-      }, { passive: true });
-
-      window.addEventListener("mousedown", () => {
-        cursorEl.classList.add("is-clicking");
-        HddAudio.playHeadSeek(1450);
-      });
-      window.addEventListener("mouseup", () => {
-        cursorEl.classList.remove("is-clicking");
-      });
-
-      // Hover state for interactive elements
-      document.addEventListener("mouseover", (e) => {
-        const interactive = e.target.closest("a, button, .file-card, .storage-volume-card");
-        if (interactive) {
-          cursorEl.classList.add("is-hovering");
-          HddAudio.playHeadSeek(1850);
-        } else {
-          cursorEl.classList.remove("is-hovering");
-        }
-      });
-
-      // Hero Platter Canvas Rendering (60fps Concentric Tracks, Sector Arcs & Metallic Reflection)
-      const canvas = document.getElementById("platter-canvas");
-      const ctx = canvas.getContext("2d");
-      let platterRotation = 0;
-
-      // Pre-generate data sector arcs on concentric tracks
-      const tracks = [];
-      for (let t = 0; t < 14; t++) {
-        const radius = 95 + t * 18.5;
-        const segments = 6 + (t % 5) * 2;
-        tracks.push({
-          radius,
-          segments,
-          speedFactor: (t % 2 === 0 ? 1 : 0.75),
-          hasHighlight: t === 4 || t === 9 || t === 12
-        });
-      }
-
-      function renderPlatter() {
-        const w = canvas.width;
-        const h = canvas.height;
-        const cx = w / 2;
-        const cy = h / 2;
-
-        ctx.clearRect(0, 0, w, h);
-
-        // 1. Outer CNC Aluminum Platter Bezel
-        ctx.save();
-        ctx.beginPath();
-        ctx.arc(cx, cy, 358, 0, Math.PI * 2);
-        const platterGrad = ctx.createRadialGradient(cx, cy, 40, cx, cy, 358);
-        platterGrad.addColorStop(0, "#0A0C0F");
-        platterGrad.addColorStop(0.55, "#12161C");
-        platterGrad.addColorStop(0.92, "#0B0D11");
-        platterGrad.addColorStop(1, "#1D242C");
-        ctx.fillStyle = platterGrad;
-        ctx.fill();
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = "rgba(0, 255, 102, 0.32)";
-        ctx.stroke();
-
-        // 2. Anisotropic Conic Specular Sheen (rotates slightly with mouse)
-        const mouseAngle = Math.atan2(mouseY - window.innerHeight / 2, mouseX - window.innerWidth / 2);
-        for (let i = 0; i < 2; i++) {
-          const baseAngle = mouseAngle + i * Math.PI;
-          ctx.beginPath();
-          ctx.moveTo(cx, cy);
-          ctx.arc(cx, cy, 354, baseAngle - 0.28, baseAngle + 0.28);
-          ctx.closePath();
-          ctx.fillStyle = "rgba(0, 255, 102, 0.045)";
-          ctx.fill();
-        }
-
-        // 3. Concentric Magnetic Tracks & Rotating Sector Markers
-        tracks.forEach((trk, idx) => {
-          // Base track ring
-          ctx.beginPath();
-          ctx.arc(cx, cy, trk.radius, 0, Math.PI * 2);
-          ctx.strokeStyle = "rgba(234, 234, 234, 0.07)";
-          ctx.lineWidth = 1;
-          ctx.stroke();
-
-          // Rotating data blocks
-          const rot = platterRotation * trk.speedFactor + idx * 0.4;
-          const step = (Math.PI * 2) / trk.segments;
-          for (let s = 0; s < trk.segments; s++) {
-            const startA = rot + s * step;
-            const endA = startA + step * 0.55;
-            ctx.beginPath();
-            ctx.arc(cx, cy, trk.radius, startA, endA);
-            if (trk.hasHighlight && s === 0) {
-              ctx.strokeStyle = "#FF5500";
-              ctx.lineWidth = 3;
-            } else {
-              ctx.strokeStyle = idx % 3 === 0 ? "rgba(0, 255, 102, 0.42)" : "rgba(234, 234, 234, 0.18)";
-              ctx.lineWidth = 1.6;
-            }
-            ctx.stroke();
-          }
-        });
-
-        // 4. Radial Sector Division Lines (16 sectors)
-        for (let r = 0; r < 16; r++) {
-          const angle = platterRotation * 0.5 + (r * Math.PI) / 8;
-          ctx.beginPath();
-          ctx.moveTo(cx + Math.cos(angle) * 85, cy + Math.sin(angle) * 85);
-          ctx.lineTo(cx + Math.cos(angle) * 348, cy + Math.sin(angle) * 348);
-          ctx.strokeStyle = "rgba(0, 255, 102, 0.06)";
-          ctx.lineWidth = 1;
-          ctx.stroke();
-        }
-
-        // 5. Center Spindle Motor Hub
-        ctx.beginPath();
-        ctx.arc(cx, cy, 74, 0, Math.PI * 2);
-        ctx.fillStyle = "#070809";
-        ctx.fill();
-        ctx.lineWidth = 2.5;
-        ctx.strokeStyle = "#00FF66";
-        ctx.stroke();
-
-        // Spindle clamping screws (6 screws rotating)
-        for (let k = 0; k < 6; k++) {
-          const sa = platterRotation * 1.8 + (k * Math.PI) / 3;
-          const sx = cx + Math.cos(sa) * 52;
-          const sy = cy + Math.sin(sa) * 52;
-          ctx.beginPath();
-          ctx.arc(sx, sy, 4.5, 0, Math.PI * 2);
-          ctx.fillStyle = "#FF5500";
-          ctx.fill();
-        }
-
-        // Center Axis Bore
-        ctx.beginPath();
-        ctx.arc(cx, cy, 22, 0, Math.PI * 2);
-        ctx.strokeStyle = "rgba(234, 234, 234, 0.45)";
-        ctx.lineWidth = 1.5;
-        ctx.stroke();
-
-        ctx.restore();
-
-        // Smoothly interpolate actuator arm toward mouse angle
-        currentArmAngle += (targetArmAngle - currentArmAngle) * 0.14;
-        if (actuatorArm) {
-          actuatorArm.style.transform = `rotate(${currentArmAngle.toFixed(2)}deg)`;
-        }
-
-        if (!prefersReducedMotion) {
-          platterRotation += 0.018;
-          requestAnimationFrame(renderPlatter);
-        }
-      }
-
-      renderPlatter();
-
-      /* ------------------------------------------------------------------------
-         F. SCROLL OBSERVERS: SKILL BARS, FILE ASSEMBLY & SECTION COLOR INVERSION
-         ------------------------------------------------------------------------ */
-      // 1. Storage Capacity Bars fill on scroll
-      const volumeCards = document.querySelectorAll(".storage-volume-card");
-      const skillObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const pct = entry.target.getAttribute("data-percent");
-            const bar = entry.target.querySelector(".volume-bar-inner");
-            if (bar) bar.style.width = `${pct}%`;
-          }
-        });
-      }, { threshold: 0.25 });
-      volumeCards.forEach(card => skillObserver.observe(card));
-
-      // 2. Recovered File Cards assemble from glitching corrupted blocks on scroll
-      const fileCards = document.querySelectorAll(".file-card");
-      const fileObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("assembled");
-            HddAudio.playHeadSeek(1100);
-          }
-        });
-      }, { threshold: 0.18 });
-      fileCards.forEach(card => fileObserver.observe(card));
-
-      // 3. Section-based Color Inversion when Contact ("Safe to remove hardware") enters view
-      const contactSection = document.getElementById("contact");
-      const invertObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            document.body.classList.add("theme-inverted");
-          } else {
-            document.body.classList.remove("theme-inverted");
-          }
-        });
-      }, { threshold: 0.35 });
-      if (contactSection) invertObserver.observe(contactSection);
-
-      /* ------------------------------------------------------------------------
-         G. MAGNETIC BUTTON INTERACTION
-         ------------------------------------------------------------------------ */
-      if (!prefersReducedMotion) {
-        const magneticBtns = document.querySelectorAll(".magnetic-btn");
-        magneticBtns.forEach(btn => {
-          btn.addEventListener("mousemove", (e) => {
-            const rect = btn.getBoundingClientRect();
-            const dx = e.clientX - (rect.left + rect.width / 2);
-            const dy = e.clientY - (rect.top + rect.height / 2);
-            btn.style.transform = `translate3d(${dx * 0.22}px, ${dy * 0.28}px, 0)`;
-          });
-          btn.addEventListener("mouseleave", () => {
-            btn.style.transform = "translate3d(0, 0, 0)";
-          });
-        });
-      }
-
-      /* ------------------------------------------------------------------------
-         H. FULLSCREEN PROJECT DETAIL MODAL ("RECOVERED FILES" INSPECTOR)
+         D. PROJECT DETAILS MODAL
          ------------------------------------------------------------------------ */
       const modalBackdrop = document.getElementById("file-modal");
       const modalCloseBtn = document.getElementById("modal-close-btn");
@@ -2396,14 +2273,12 @@
         const proj = CFG.projects[index];
         if (!proj) return;
 
-        document.getElementById("modal-file-id").textContent = `INSPECTING: ${proj.id}`;
-        document.getElementById("modal-sector").textContent = proj.sector;
-        document.getElementById("modal-integrity").textContent = proj.integrity;
-        document.getElementById("modal-size").textContent = proj.size;
+        document.getElementById("modal-file-id").textContent = `PROJECT ${String(index + 1).padStart(2, "0")}`;
+        document.getElementById("modal-sector").textContent = proj.tags.slice(0, 2).join(" · ");
+        document.getElementById("modal-integrity").textContent = proj.metrics[0] || "Project case study";
+        document.getElementById("modal-size").textContent = `${proj.metrics.length} project highlights`;
         document.getElementById("modal-title").textContent = proj.title;
         document.getElementById("modal-desc").textContent = proj.description;
-        document.getElementById("modal-hex").textContent = `RAW HEADER BYTES: ${proj.hexPreview}`;
-
         const metricsList = document.getElementById("modal-metrics");
         metricsList.innerHTML = (proj.metrics || []).map(m => `<li>&#10003; ${m}</li>`).join("");
 
@@ -2412,12 +2287,10 @@
         document.getElementById("modal-link-text").textContent = proj.linkText || "OPEN PROJECT LINK";
 
         modalBackdrop.classList.add("open");
-        HddAudio.playDataChirp();
       }
 
       function closeProjectModal() {
         modalBackdrop.classList.remove("open");
-        HddAudio.playHeadSeek(750);
       }
 
       document.getElementById("projects-grid").addEventListener("click", (e) => {
@@ -2473,7 +2346,7 @@
           }).format(now);
 
           clockTimeEl.textContent = `${timeStr} ICT`;
-          clockDateEl.textContent = `${dateStr.toUpperCase()} // ${CFG.location}`;
+          clockDateEl.textContent = dateStr.toUpperCase();
         } catch (err) {
           clockTimeEl.textContent = now.toTimeString().slice(0, 8);
         }
